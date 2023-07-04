@@ -12,12 +12,12 @@
   --first-color-light: hsl(228, 62%, 59%);
   --first-color-lighten: hsl(228, 100%, 97%);
   --second-color: hsl(25, 83%, 53%);
-  --title-color: hsl(228, 57%, 28%);
+  --title-color: hsl(46, 100%, 33%);
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
   --border-color: hsl(228, 99%, 98%);
   --body-color: #fff;
-  --container-color: #fff;
+  --container-color: hsl(0, 0%, 15%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -71,11 +71,21 @@ body {
   transition: 0.3s; /* For animation dark mode */
 }
 
+/*revan*/
+p {
+  color: #fff;
+}
+
+/*revan*/
 h1,
-h2,
 h3 {
-  color: var(--title-color);
+  color: var(--first-color);
   font-weight: var(--font-semi-bold);
+}
+
+/*revan*/
+h2 {
+  color: var(--title-color);
 }
 
 ul {
@@ -133,15 +143,22 @@ body.dark-theme {
 
 .dark-theme .nav__menu,
 .dark-theme .home__img,
-.dark-theme .popular__card:hover,
+.dark-theme .services__card:hover, /*revan*/
 .dark-theme .value__img,
 .dark-theme .accordion-open,
 .dark-theme .accordion-open .value__accordion-icon,
 .dark-theme .accordion-open .value__accordion-arrow,
 .dark-theme .contact__img,
 .dark-theme .contact__card-box:hover,
+/*revan*/
 .dark-theme .scrollup {
   box-shadow: none;
+  color: #fff;
+}
+/*revan*/
+.dark-theme .scrollup:hover {
+  transform: translateY(-0.25rem);
+  color: #fff;
 }
 
 .dark-theme .value__orbe,
@@ -404,9 +421,10 @@ body.dark-theme {
 }
 
 /*=============== BUTTON ===============*/
+/*revan*/
 .button {
   display: inline-block;
-  background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+  background: var(--title-color);
   color: #fff;
   padding: 14px 28px;
   border-radius: 0.5rem;
@@ -417,8 +435,9 @@ body.dark-theme {
   cursor: pointer;
 }
 
+/*revan*/
 .button:hover {
-  box-shadow: 0 4px 12px hsla(228, 66%, 45%, 0.25);
+  box-shadow: 0 4px 12px hsla(0, 0%, 100%, 0.244);
 }
 
 .nav__button {
@@ -448,7 +467,8 @@ body.dark-theme {
   padding: 1rem 0 5rem;
 }
 
-.popular__card {
+/*revan*/
+.services__card {
   width: 290px;
   background-color: var(--container-color);
   padding: 0.5rem 0.5rem 1.5rem;
@@ -466,26 +486,17 @@ body.dark-theme {
   padding: 0 1rem 0 0.5rem;
 }
 
-.popular__price {
-  font-size: var(--h2-font-size);
-  color: var(--text-color);
-  margin-bottom: 0.25rem;
-}
-
-.popular__price span {
-  color: var(--second-color);
-}
-
 .popular__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
 
-.popular__description {
+.services__description {
   font-size: var(--small-font-size);
 }
 
-.popular__card:hover {
+/*revan*/
+.services__card:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
 }
 
@@ -496,6 +507,7 @@ body.dark-theme {
 }
 
 .swiper-button-next,
+/*revan*/
 .swiper-button-prev {
   top: initial;
   bottom: 0;
@@ -506,7 +518,7 @@ body.dark-theme {
   padding: 6px;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--body-color);
 }
 
 .swiper-button-prev {
@@ -637,16 +649,16 @@ body.dark-theme {
   justify-content: center;
 }
 
+/*revan*/
 .contact__orbe {
-  /*revan*/
   width: 430px;
   height: 330px;
   background-color: hsl(228, 24%, 97%);
   border-radius: 16px 16px;
 }
 
+/*revan*/
 .contact__img {
-  /*revan*/
   position: absolute;
   width: 400px;
   height: 300px;
@@ -655,6 +667,11 @@ body.dark-theme {
   inset: 0;
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
+
+/*revan*/
+p.contact__card-description {
+  color: #1a1919;
 }
 
 .contact__description {
@@ -683,36 +700,48 @@ body.dark-theme {
   margin-bottom: 1.25rem;
 }
 
+/*revan*/
 .contact__card i {
   padding: 6px;
-  background-color: var(--first-color-lighten);
+  background-color: #000000;
   border-radius: 6px;
   font-size: 1.25rem;
-  color: var(--first-color);
+  color: var(--title-color);
 }
 
+/*revan*/
+h3.contact__card-title {
+  color: var(--title-color);
+}
 .contact__card-title {
   font-size: var(--normal-font-size);
+}
+
+/*revan*/
+p.contact__card-description {
+  color: hsl(228, 12%, 8%);
 }
 
 .contact__card-description {
   font-size: var(--smaller-font-size);
 }
 
+/*revan*/
 .contact__card-button {
   font-size: var(--small-font-size);
   padding: 14px 0;
   width: 100%;
   border-radius: 0.25rem;
-  background: var(--first-color-lighten);
-  color: var(--first-color);
+  background: var(--title-color);
+  color: var(--body-color);
   font-weight: var(--font-semi-bold);
   box-shadow: none;
 }
 
+/*revan*/
 .contact__card-button:hover {
-  background-color: var(--first-color);
-  color: #fff;
+  background-color: var(--container-color);
+  color: var(--body-color);
 }
 
 .contact__card-box:hover {
@@ -864,6 +893,7 @@ body.dark-theme {
 }
 
 /*=============== SCROLL UP ===============*/
+/*revan*/
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -873,15 +903,16 @@ body.dark-theme {
   display: inline-flex;
   padding: 0.35rem;
   border-radius: 0.25rem;
-  color: var(--title-color);
+  color: var(--body-color);
   font-size: 1.25rem;
   z-index: var(--z-tooltip);
   transition: 0.3s;
 }
 
+/*revan*/
 .scrollup:hover {
   transform: translateY(-0.25rem);
-  color: var(--first-color);
+  color: var(--body-color);
 }
 
 /* Show Scroll Up*/
@@ -932,7 +963,8 @@ body.dark-theme {
     gap: 2rem 1rem;
   }
 
-  .popular__card {
+  /*revan*/
+  .services__card {
     width: 230px;
     padding: 0.5rem 0.5rem 0.75rem;
   }
@@ -1022,8 +1054,10 @@ body.dark-theme {
   .section {
     padding: 7.5rem 0 1rem;
   }
+  /*revan*/
   .section__title {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    text-align: center;
   }
   .section__subtitle {
     font-size: var(--normal-font-size);
@@ -1109,7 +1143,8 @@ body.dark-theme {
   .popular__container {
     padding-top: 3rem;
   }
-  .popular__card {
+  /*revan*/
+  .services__card {
     width: 320px;
     padding: 0.75rem 0.75rem 2rem;
   }
@@ -1123,22 +1158,22 @@ body.dark-theme {
     column-gap: 5rem;
   }
   .value__orbe,
+  /*revan*/
   .contact__orbe {
-    /*revan*/
     width: 530px;
     height: 530px;
     border-radius: 16px 16px;
   }
   .value__img,
+  /*revan*/
   .contact__img {
-    /*revan*/
     width: 500px;
     height: 500px;
     border-radius: 12px 12px;
   }
   .value__img img,
+  /*revan*/
   .contact__img img {
-    /*revan*/
     max-width: initial;
     width: 500px;
   }
