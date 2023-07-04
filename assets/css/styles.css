@@ -638,18 +638,20 @@ body.dark-theme {
 }
 
 .contact__orbe {
-  width: 266px;
-  height: 316px;
+  /*revan*/
+  width: 430px;
+  height: 330px;
   background-color: hsl(228, 24%, 97%);
-  border-radius: 135px 135px 16px 16px;
+  border-radius: 16px 16px;
 }
 
 .contact__img {
+  /*revan*/
   position: absolute;
-  width: 250px;
+  width: 400px;
   height: 300px;
   overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
+  border-radius: 12px 12px;
   inset: 0;
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
@@ -1122,20 +1124,23 @@ body.dark-theme {
   }
   .value__orbe,
   .contact__orbe {
-    width: 501px;
-    height: 641px;
-    border-radius: 258px 258px 16px 16px;
+    /*revan*/
+    width: 530px;
+    height: 530px;
+    border-radius: 16px 16px;
   }
   .value__img,
   .contact__img {
-    width: 461px;
-    height: 601px;
-    border-radius: 238px 238px 12px 12px;
+    /*revan*/
+    width: 500px;
+    height: 500px;
+    border-radius: 12px 12px;
   }
   .value__img img,
   .contact__img img {
+    /*revan*/
     max-width: initial;
-    width: 490px;
+    width: 500px;
   }
   .value__description,
   .contact__description {
