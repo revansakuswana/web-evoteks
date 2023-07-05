@@ -79,7 +79,7 @@ p {
 /*revan*/
 h1,
 h3 {
-  color: var(--first-color);
+  color: var(--body-color);
   font-weight: var(--font-semi-bold);
 }
 
@@ -226,17 +226,20 @@ body.dark-theme {
 }
 
 /*=============== HEADER & NAV ===============*/
+/*revan*/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: var(--container-color);
   z-index: var(--z-fixed);
   transition: 0.4s; /* For animation dark mode */
 }
 
+/*revan*/
 .nav {
+  background-color: var(--container-color);
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -298,8 +301,9 @@ body.dark-theme {
 }
 
 /* Change background header */
+/*revan*/
 .scroll-header {
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
 }
 
@@ -319,8 +323,8 @@ body.dark-theme {
 }
 
 /*=============== HOME ===============*/
+/*revan*/
 .home {
-  background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%);
   padding-bottom: 0;
 }
 
@@ -462,8 +466,8 @@ body.dark-theme {
   opacity: 0.6;
 }
 
-/*=============== POPULAR ===============*/
-.popular__container {
+/*=============== SERVICES ===============*/
+.services__container {
   padding: 1rem 0 5rem;
 }
 
@@ -477,16 +481,16 @@ body.dark-theme {
   transition: 0.4s;
 }
 
-.popular__img {
+.services__img {
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
 
-.popular__data {
+.services__data {
   padding: 0 1rem 0 0.5rem;
 }
 
-.popular__title {
+.services__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
@@ -497,6 +501,45 @@ body.dark-theme {
 
 /*revan*/
 .services__card:hover {
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
+}
+
+/*revan*/
+/*=============== PORTOFOLIO ===============*/
+.portofolio__container {
+  padding: 1rem 0 5rem;
+}
+
+/*revan*/
+.portofolio__card {
+  width: 290px;
+  background-color: var(--container-color);
+  padding: 0.5rem 0.5rem 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.portofolio__img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.services__data {
+  padding: 0 1rem 0 0.5rem;
+}
+
+.portofolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.portofolio__description {
+  font-size: var(--small-font-size);
+}
+
+/*revan*/
+.portofolio__card:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
 }
 
@@ -1011,7 +1054,6 @@ p.contact__card-description {
 
 @media screen and (min-width: 767px) {
   .home__container {
-    grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
   }
   .home__orbe {
@@ -1052,7 +1094,7 @@ p.contact__card-description {
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section {
-    padding: 7.5rem 0 1rem;
+    padding: 5rem 0 1rem;
   }
   /*revan*/
   .section__title {
@@ -1096,9 +1138,10 @@ p.contact__card-description {
     color: var(--text-color-light);
   }
 
+  /*revan*/
   .scroll-header .nav__link,
   .scroll-header .change-theme {
-    color: var(--text-color);
+    color: var(--text-color-light);
   }
   .scroll-header .active-link {
     color: var(--first-color);
@@ -1107,9 +1150,16 @@ p.contact__card-description {
   .home {
     padding-bottom: 0;
   }
+  /*revan*/
   .home__container {
-    padding-top: 5rem;
     column-gap: 2rem;
+  }
+  /*revan*/
+  div.home__container.container.grid {
+    max-width: max-content;
+    margin-left: 0rem;
+    margin-right: 0;
+    padding-top: 0rem;
   }
   .home__data {
     padding-bottom: 4rem;
@@ -1140,7 +1190,7 @@ p.contact__card-description {
     height: 100px;
   }
 
-  .popular__container {
+  .services__container {
     padding-top: 3rem;
   }
   /*revan*/
@@ -1148,7 +1198,7 @@ p.contact__card-description {
     width: 320px;
     padding: 0.75rem 0.75rem 2rem;
   }
-  .popular__data {
+  .services__data {
     padding: 0 0.25rem 0 0.75rem;
   }
 

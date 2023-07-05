@@ -6,8 +6,8 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SWIPER POPULAR ===============*/
-let swiperPopular = new Swiper(".popular__container", {
+/*=============== SWIPER services ===============*/
+let swiperportofolio = new Swiper(".portofolio__container", {
     spaceBetween: 32,
     grabCursor: true,
     centeredSlides: true,
@@ -124,7 +124,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home__title, .popular__container, .subscribe__container, .footer__container`)
+sr.reveal(`.home__title, .services__container, .subscribe__container, .footer__container`)
 sr.reveal(`.home__description, .footer__info`, {delay: 500})
 sr.reveal(`.home__search`, {delay: 600})
 sr.reveal(`.home__value`, {delay: 700})
