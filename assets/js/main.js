@@ -8,7 +8,7 @@ window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER services ===============*/
 let swiperportofolio = new Swiper(".portofolio__container", {
-    spaceBetween: 32,
+    spaceBetween: 40,
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
