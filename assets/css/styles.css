@@ -826,12 +826,30 @@ p.contact__card-description {
 }
 
 /*=============== FOOTER ===============*/
-.footer__container {
-  row-gap: 2.5rem;
+.footer {
+  background-image: url('https://images.wallpaperscraft.com/image/single/city_night_city_coast_179489_3840x2160.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 2rem;
+  }
+
+.bg-img {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 
+.footer__container {
+  row-gap: 2.5rem;
+  }
+
+
 .footer__logo {
-  color: var(--first-color);
+  color: #fff;
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   display: inline-flex;
@@ -846,6 +864,7 @@ p.contact__card-description {
 
 .footer__description,
 .footer__link {
+  color: #fff;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
@@ -861,8 +880,10 @@ p.contact__card-description {
 }
 
 .footer__title {
+  color: #F9D700;
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .footer__links {
@@ -885,7 +906,7 @@ p.contact__card-description {
 
 .footer__social-link {
   font-size: 1.25rem;
-  color: var(--text-color);
+  color: var(--body-color);
   transition: 0.3s;
 }
 
@@ -900,7 +921,7 @@ p.contact__card-description {
 
 .footer__info {
   padding-bottom: 6rem;
-  margin-top: 5.5rem;
+  /* margin-top: 5.5rem; */
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
@@ -910,14 +931,13 @@ p.contact__card-description {
 .footer__privacy a {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
-  color: var(--text-color);
+  color: var(--body-color);
 }
 
 .footer__privacy {
   justify-content: center;
   column-gap: 1.25rem;
 }
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
