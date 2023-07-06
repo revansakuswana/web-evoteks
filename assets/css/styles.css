@@ -325,14 +325,6 @@ body.dark-theme {
 /*=============== HOME ===============*/
 /*revan*/
 .home {
-<<<<<<< HEAD
-=======
-  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  /* background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%); */
->>>>>>> 10e7740eda39492e9fd652f57a3ac93c2e1f2385
   padding-bottom: 0;
 }
 
@@ -343,7 +335,6 @@ body.dark-theme {
 
 .home__title,
 .home__value-number {
-  color: #fff;
   text-align: center;
   padding-top: 3rem;
 }
@@ -839,12 +830,12 @@ p.contact__card-description {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-image: url('https://images.wallpaperscraft.com/image/single/city_night_city_coast_179489_3840x2160.jpg');
+  background-image: url("https://images.wallpaperscraft.com/image/single/city_night_city_coast_179489_3840x2160.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   padding-top: 2rem;
-  }
+}
 
 .bg-img {
   opacity: 0.6;
@@ -857,8 +848,7 @@ p.contact__card-description {
 
 .footer__container {
   row-gap: 2.5rem;
-  }
-
+}
 
 .footer__logo {
   color: #fff;
@@ -892,7 +882,7 @@ p.contact__card-description {
 }
 
 .footer__title {
-  color: #F9D700;
+  color: #f9d700;
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
   padding-top: 1rem;
@@ -1125,11 +1115,7 @@ p.contact__card-description {
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section {
-<<<<<<< HEAD
     padding: 5rem 0 1rem;
-=======
-    padding: 1rem 0 1rem;
->>>>>>> 10e7740eda39492e9fd652f57a3ac93c2e1f2385
   }
   /*revan*/
   .section__title {
@@ -1183,33 +1169,21 @@ p.contact__card-description {
   }
 
   .home {
-<<<<<<< HEAD
     background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10rem;
-=======
-    padding-bottom: 0;
-    background-image: url("assets/img/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
->>>>>>> 10e7740eda39492e9fd652f57a3ac93c2e1f2385
   }
   /*revan*/
   .home__container {
     column-gap: 2rem;
   }
-<<<<<<< HEAD
   /*revan*/
   .home__logo {
     background-image: url("https://image.kitakerja.com/root/photo/LogoEvoteks-408405923.png?s=595d965a033230ce147443ad4b6a3dc1");
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: center;
-=======
-
-  .home__data {
->>>>>>> 10e7740eda39492e9fd652f57a3ac93c2e1f2385
     padding-bottom: 4rem;
     opacity: 0;
     transition: opacity 1s;
@@ -1219,7 +1193,7 @@ p.contact__card-description {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.859);
+    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
     font-family: StevieSans-Bold;
     font-size: 50px;
     font-style: normal;
