@@ -124,7 +124,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home__title, .popular__container, .subscribe__container, .footer__container`)
+sr.reveal(`.home__title, .home__title2, .popular__container, .subscribe__container, .footer__container`)
 sr.reveal(`.home__description, .footer__info`, {delay: 500})
 sr.reveal(`.home__search`, {delay: 600})
 sr.reveal(`.home__value`, {delay: 700})
@@ -132,3 +132,33 @@ sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
+
+// Menunggu halaman selesai dimuat
+window.onload = function() {
+// Mengambil elemen logo
+var logoElement = document.querySelector('.home__logo');
+    
+// Mengubah opasitas dari 0 menjadi 100%
+logoElement.style.opacity = '1';
+
+// Menunggu 2 detik sebelum mengubah opasitas menjadi 50%
+setTimeout(function() {
+logoElement.style.opacity = '0.5';
+    }, 2000);
+};
+
+// Setelah 0.5 detik, munculkan teks
+setTimeout(function() {
+  var textElement = document.querySelector('.home__title');
+  textElement.style.opacity = '1';
+}, 500);
+
+setTimeout(function() {
+    var textElement = document.querySelector('.home__title2');
+    textElement.style.opacity = '1';
+  }, 1500)
+
+setTimeout(function() {
+    var textElement = document.querySelector('.home__description');
+    textElement.style.opacity = '1';
+  }, 1500)  
