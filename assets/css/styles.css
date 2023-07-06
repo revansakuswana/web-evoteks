@@ -329,7 +329,6 @@ body.dark-theme {
 }
 
 .home__container {
-  padding-top: 4rem;
   row-gap: 3.5rem;
 }
 
@@ -1149,18 +1148,15 @@ p.contact__card-description {
 
   .home {
     padding-bottom: 0;
+    background-image: url("assets/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   /*revan*/
   .home__container {
     column-gap: 2rem;
   }
-  /*revan*/
-  div.home__container.container.grid {
-    max-width: max-content;
-    margin-left: 0rem;
-    margin-right: 0;
-    padding-top: 0rem;
-  }
+
   .home__data {
     padding-bottom: 4rem;
   }
