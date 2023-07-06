@@ -325,10 +325,16 @@ body.dark-theme {
 /*=============== HOME ===============*/
 /*revan*/
 .home {
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  /* background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%); */
   padding-bottom: 0;
 }
 
 .home__container {
+  padding-top: 4rem;
   row-gap: 3.5rem;
 }
 
@@ -422,7 +428,6 @@ body.dark-theme {
   bottom: -1.5rem;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
 }
-
 /*=============== BUTTON ===============*/
 /*revan*/
 .button {
