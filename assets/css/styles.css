@@ -638,6 +638,7 @@ body.dark-theme {
 
 .value__accordion-title {
   font-size: var(--small-font-size);
+  color: #313339;
 }
 
 .value__accordion-arrow {
@@ -732,9 +733,9 @@ p.contact__card-description {
 
 .contact__card-box {
   background-color: var(--body-color);
-  border: 2px solid var(--border-color);
+  border: 3px solid hsl(228, 24%, 97%);
   padding: 1.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 16px 16px;
   transition: 0.3s;
 }
 
@@ -748,15 +749,14 @@ p.contact__card-description {
 /*revan*/
 .contact__card i {
   padding: 6px;
-  background-color: #000000;
   border-radius: 6px;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   color: var(--title-color);
 }
 
 /*revan*/
 h3.contact__card-title {
-  color: var(--title-color);
+  color: #121317;
 }
 .contact__card-title {
   font-size: var(--normal-font-size);
@@ -847,7 +847,7 @@ p.contact__card-description {
 }
 
 .footer__container {
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 }
 
 .footer__logo {
@@ -855,20 +855,15 @@ p.contact__card-description {
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   display: inline-flex;
-  align-items: center;
   column-gap: 0.25rem;
   margin-bottom: 0.75rem;
-}
-
-.footer__logo i {
-  font-size: 1.25rem;
 }
 
 .footer__description,
 .footer__link {
   color: #fff;
   font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
+  font-size: 15px;
 }
 
 .footer__content,
@@ -878,14 +873,11 @@ p.contact__card-description {
 
 .footer__content {
   grid-template-columns: repeat(2, max-content);
-  gap: 2.5rem 4rem;
 }
 
 .footer__title {
   color: #f9d700;
   font-size: var(--h3-font-size);
-  margin-bottom: 1rem;
-  padding-top: 1rem;
 }
 
 .footer__links {
@@ -1109,13 +1101,14 @@ p.contact__card-description {
   .footer__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+    column-gap: 1rem;
   }
 }
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section {
-    padding: 5rem 0 1rem;
+    padding: 8rem 0 5rem;
   }
   /*revan*/
   .section__title {
@@ -1179,17 +1172,18 @@ p.contact__card-description {
     column-gap: 2rem;
   }
   /*revan*/
-  .home__logo {
+  div.home__logo {
     background-image: url("https://image.kitakerja.com/root/photo/LogoEvoteks-408405923.png?s=595d965a033230ce147443ad4b6a3dc1");
     background-repeat: no-repeat;
+    background-blend-mode: lighten;
     background-size: 500px;
     background-position: center;
     padding-bottom: 4rem;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 2s;
   }
   /*revan*/
-  .home__title {
+  h1.home__title {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
@@ -1204,7 +1198,7 @@ p.contact__card-description {
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
   /*revan*/
-  .home__title2 {
+  h1.home__title2 {
     text-align: center;
     color: #f9d700;
     text-align: center;
@@ -1219,7 +1213,7 @@ p.contact__card-description {
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
   /*revan*/
-  .home__description {
+  p.home__description {
     margin-bottom: 3rem;
     padding-top: 0rem;
     opacity: 0;
@@ -1259,7 +1253,7 @@ p.contact__card-description {
   .value__container,
   .contact__container {
     align-items: flex-start;
-    column-gap: 5rem;
+    column-gap: 3rem;
   }
   .value__orbe,
   /*revan*/
@@ -1298,11 +1292,14 @@ p.contact__card-description {
     font-size: var(--small-font-size);
   }
 
+  p.value__accordion-description {
+    color: #121317;
+  }
+
   .contact__card {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 230px);
   }
   .contact__card-box {
-    padding: 28px 1.5rem 1.5rem;
   }
 
   .subscribe__container {
@@ -1322,11 +1319,18 @@ p.contact__card-description {
     font-size: var(--normal-font-size);
   }
 
+  footer.footer.section {
+    padding: 3rem;
+  }
+  h3.footer__nama {
+    font-size: 25px;
+    color: #f9d700;
+  }
   .footer__content {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(3, max-content);
   }
   .footer__title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .footer__links {
     row-gap: 1rem;
