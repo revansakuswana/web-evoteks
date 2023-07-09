@@ -1195,6 +1195,7 @@ p.contact__card-description {
     grid-template-columns: repeat(2, 2fr);
     justify-items: center;
     gap: 1rem;
+    padding-top: 1rem;
   }
 
   .contact__card-box {
