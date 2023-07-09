@@ -121,7 +121,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
-    delay: 400,
+    delay: 1000,
 })
 
 sr.reveal(`.home__title, .home__title2, .services__container, .portofolio__container, .footer__container`)
@@ -136,29 +136,28 @@ sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
 // Menunggu halaman selesai dimuat
 window.onload = function() {
 // Mengambil elemen logo
-var logoElement = document.querySelector('.home__logo');
-    
+var logoElement = document.querySelector('div.home__logo');
 // Mengubah opasitas dari 0 menjadi 100%
 logoElement.style.opacity = '1';
 
 // Menunggu 2 detik sebelum mengubah opasitas menjadi 50%
 setTimeout(function() {
 logoElement.style.opacity = '0.5';
-    }, 2000);
+    }, 3000);
 };
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
-  var textElement = document.querySelector('.home__title');
-  textElement.style.opacity = '1';
-}, 500);
+  var textElement = document.querySelector('h1.home__title');
+  textElement.style.opacity = '2';
+}, 1500);
 
 setTimeout(function() {
-    var textElement = document.querySelector('.home__title2');
-    textElement.style.opacity = '1';
-  }, 1500)
+    var textElement = document.querySelector('h1.home__title2');
+    textElement.style.opacity = '2';
+  }, 2000)
 
 setTimeout(function() {
-    var textElement = document.querySelector('.home__description');
-    textElement.style.opacity = '1';
-  }, 1500)  
+    var textElement = document.querySelector('p.home__description');
+    textElement.style.opacity = '2';
+  }, 2000)  
