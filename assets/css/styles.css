@@ -1104,7 +1104,7 @@ p.contact__card-description {
     padding: 1.3rem 1.5rem;
   }
   .section {
-    padding: 5.5rem 0 2rem;
+    padding: 3rem 0 2rem;
   }
   h2.section__title {
     text-align: center;
@@ -1113,7 +1113,7 @@ p.contact__card-description {
     padding-bottom: 0;
   }
   .home__container {
-    padding-top: 1rem;
+    padding-top: 4rem;
     row-gap: 0rem;
   }
   .grid {
@@ -1213,8 +1213,8 @@ p.contact__card-description {
   /*revan*/
   .contact__img,
   .maps {
-    width: 320px;
-    height: 320px;
+    width: 340px;
+    height: 340px;
   }
   .contact__card {
     display: grid;
@@ -1232,6 +1232,7 @@ p.contact__card-description {
   .contact__card i {
     font-size: 2.5rem;
   }
+
   .footer__container {
     padding-top: 0rem;
     row-gap: 1.5rem;
