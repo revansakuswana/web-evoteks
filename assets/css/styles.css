@@ -996,6 +996,7 @@ p.contact__card-description {
   .section {
     padding: 1rem 0 1rem;
   }
+
   h2.section__title {
     text-align: center;
   }
@@ -1109,9 +1110,13 @@ p.contact__card-description {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .nav__menu {
     padding: 1.3rem 1.5rem;
+  }
+
+  h2.section__title {
+    text-align: center;
   }
 
   .home__value {
@@ -1136,19 +1141,42 @@ p.contact__card-description {
     padding: 0.5rem 0.5rem 0.75rem;
   }
 
-  .value__img,
-  .contact__img {
-    width: 220px;
-    height: 260px;
-  }
-  .value__orbe,
-  .contact__orbe {
-    width: 236px;
-    height: 280px;
+  .contact__container {
+    row-gap: 3rem;
   }
 
-  .subscribe__container {
-    padding: 2rem 1rem;
+  .contact__orbe {
+    width: 350px;
+    height: 350px;
+  }
+
+  /*revan*/
+  .contact__img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .maps {
+    width: 320px;
+    height: 320px;
+  }
+
+  .contact__card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .contact__card-box {
+    padding: 0.75rem;
+    width: 70%;
+  }
+
+  /*revan*/
+  .contact__card i {
+    font-size: 2.5rem;
   }
 
   .footer__content {
@@ -1192,7 +1220,7 @@ p.contact__card-description {
 
   .contact__card {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 1rem;
     padding-top: 1rem;
@@ -1200,16 +1228,15 @@ p.contact__card-description {
 
   .contact__card-box {
     padding: 0.75rem;
-    width: 90%;
+    width: 100%;
   }
 
   .contact__card-info {
-    margin-bottom: 15px;
+    column-gap: 2rem;
   }
 
   /*revan*/
   .contact__card i {
-    width: 30%;
     font-size: 2.5rem;
   }
 
@@ -1260,6 +1287,14 @@ p.contact__card-description {
   }
   .contact__card {
     justify-content: initial;
+  }
+
+  .contact__card i {
+    font-size: 2.5rem;
+  }
+
+  .contact__card-info {
+    column-gap: 2rem;
   }
 
   .subscribe__container {
