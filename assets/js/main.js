@@ -7,11 +7,11 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER services ===============*/
-let swiperportofolio = new Swiper(".portofolio__container", {
-    spaceBetween: 40,
+let swiperportofolio = new Swiper(".popular__container", {
+    spaceBetween: 25,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: "3",
     loop: true,
 
     navigation: {
@@ -142,22 +142,22 @@ logoElement.style.opacity = '1';
 
 // Menunggu 2 detik sebelum mengubah opasitas menjadi 50%
 setTimeout(function() {
-logoElement.style.opacity = '0.5';
-    }, 3000);
+logoElement.style.opacity = '1';
+    }, 2000);
 };
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
   var textElement = document.querySelector('h1.home__title');
   textElement.style.opacity = '2';
-}, 1500);
+}, 1000);
 
 setTimeout(function() {
     var textElement = document.querySelector('h1.home__title2');
-    textElement.style.opacity = '2';
-  }, 2000)
+    textElement.style.opacity = '3';
+  }, 2500)
 
 setTimeout(function() {
     var textElement = document.querySelector('p.home__description');
-    textElement.style.opacity = '2';
-  }, 2000)  
+    textElement.style.opacity = '3';
+  }, 2500)  
