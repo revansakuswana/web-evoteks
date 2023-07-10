@@ -1126,8 +1126,8 @@ p.contact__card-description {
     background-position: center;
   }
   /*revan*/
-  .logo {
-    size: 50%;
+  img.logo__home {
+    width: 80%;
   }
 
   div.home__logo {
@@ -1135,6 +1135,7 @@ p.contact__card-description {
     background-blend-mode: lighten;
     background-position: center;
     text-align: center;
+    padding-top: 5rem;
     opacity: 0;
     transition: 1s ease-in-out;
   }
@@ -1148,7 +1149,7 @@ p.contact__card-description {
     font-size: 20px;
     font-style: normal;
     margin: 0rem;
-    padding: 0rem;
+    padding-top: 1rem;
     opacity: 0;
     transition: 1s ease-in-out;
   }
@@ -1163,6 +1164,7 @@ p.contact__card-description {
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 1px;
+    padding-top: 1rem;
     opacity: 0;
     transition: 1s ease-in-out;
   }
@@ -1174,7 +1176,8 @@ p.contact__card-description {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
-    padding: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 8rem;
     opacity: 0;
     transition: opacity 2s ease-in-out;
   }
@@ -1236,6 +1239,14 @@ p.contact__card-description {
   .footer__content {
     gap: 2.5rem;
     padding-left: 1.5rem;
+  }
+  .footer__info {
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
+    padding-left: 1.5rem;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
