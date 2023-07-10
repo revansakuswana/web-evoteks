@@ -1109,6 +1109,9 @@ p.contact__card-description {
   .nav__menu {
     padding: 1.3rem 1.5rem;
   }
+  .section {
+    padding: 5.5rem 0 2rem;
+  }
   h2.section__title {
     text-align: center;
   }
