@@ -11,7 +11,7 @@ let swiperportofolio = new Swiper(".popular__container", {
     spaceBetween: 25,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "3",
+    slidesPerView: 3,
     loop: true,
 
     navigation: {
@@ -132,7 +132,7 @@ sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
-
+sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
 // Menunggu halaman selesai dimuat
 window.onload = function() {
 // Mengambil elemen logo
