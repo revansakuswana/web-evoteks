@@ -287,17 +287,20 @@ id="bootstrap-css"
 
           <div class="popular__container grid swiper">
             <div class="swiper-wrapper">
-              <article class="portfolio__card swiper-slide">
-                <img
-                  src="assets/img/telkomsel.png"
-                  alt=""
-                  class="portfolio__img"
-                />
+              <article
+              class="portfolio__card swiper-slide trigger-modal"
+              title="Ini Article 1"
+            >
+              <img
+                src="assets/img/telkomsel.png"
+                alt=""
+                class="portfolio__img"
+              />
 
-                <div class="portfolio__data">
-                  <h3 class="porto">Telkomsel</h3>
-                </div>
-              </article>
+              <div class="portfolio__data">
+                <h3 class="porto">Telkomsel</h3>
+              </div>
+            </article>
 
               <article class="portfolio__card swiper-slide">
                 <img src="assets/img/Novo.png" alt="" class="portfolio__img" />
@@ -326,6 +329,30 @@ id="bootstrap-css"
         </div>
       </section>
 
+      <div
+        class="modal fade modal-profile"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalProfile"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal">
+                ×
+              </button>
+              <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--==================== VALUE ====================-->
       <section class="value section" id="ourvalue">
         <div class="value__container container grid">
@@ -339,12 +366,7 @@ id="bootstrap-css"
 
           <div class="value__content">
             <div class="value__data">
-              <span class="section__subtitle">Our Value</span>
-              <h2 class="section__title">Value We Give To You<span>.</span></h2>
-              <!--<p class="value__description">
-                We always ready to help by providing the best service for you.
-                We believe a good place to live can make your life better.
-              </p>-->
+              <h2 class="section__title">Value We Give To You</h2>
             </div>
 
             <div class="value__accordion">
@@ -457,9 +479,6 @@ id="bootstrap-css"
             </div>
             <div class="logos__img">
               <img src="assets/img/logo6.png" alt="" />
-            </div>
-            <div class="logos__img">
-              <img src="assets/img/logo7.png" alt="" />
             </div>
             <div class="logos__img">
               <img src="assets/img/logo8.png" alt="" />

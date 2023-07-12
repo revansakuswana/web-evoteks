@@ -19,7 +19,15 @@ let swiperportofolio = new Swiper(".popular__container", {
       prevEl: ".swiper-button-prev",
     },
 })
-
+$("article.trigger-modal").click(function (event) {
+    event.preventDefault();
+    var content = $(".modal-body");
+    content.empty();
+    var title = $(this).attr("title");
+    $(".modal-title").html(title);
+    content.html($(this).html());
+    $(".modal-profile").modal({ show: true });
+  });
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
 
