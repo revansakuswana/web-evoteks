@@ -75,7 +75,10 @@ body {
 p {
   color: #fff;
 }
-
+/* rendy */
+p .modal-body {
+  color: #121317;
+}
 /*revan*/
 h1,
 h3 {
@@ -566,8 +569,7 @@ ul.nav__list {
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  aspect-ratio: 16/10;
+  border: 5px #000;
 }
 .btn {
   position: relative;

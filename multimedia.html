@@ -26,11 +26,12 @@ href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 rel="stylesheet"
 id="bootstrap-css"
 />
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
   <body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -287,7 +288,8 @@ id="bootstrap-css"
 
           <div class="popular__container grid swiper">
             <div class="swiper-wrapper">
-              <article class="portfolio__card swiper-slide">
+              <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="Yamaha" description="lorem ipsum" src="https://evoteks.co.id/images/portfolio/portfolio_10_1482523660.webm">
                 <img
                   src="assets/img/yamaha.png"
                   alt=""
@@ -299,7 +301,8 @@ id="bootstrap-css"
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+              <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="3D Modeling Aqua" description="lorem ipsum" src="   https://evoteks.co.id/images/portfolio/portfolio_9_1482502926.mp4">
                 <img src="assets/img/3d.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -307,14 +310,17 @@ id="bootstrap-css"
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+               <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="Badan Kepegawaian Negara" description="lorem ipsum" src="https://evoteks.co.id/images/portfolio/portfolio_11_1482521125.webm">
                 <img src="assets/img/BPK.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
                   <h3 class="porto">Badan Kepegawaian Negara</h3>
                 </div>
               </article>
-              <article class="portfolio__card swiper-slide">
+              <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="Booth Virtual Studio 3D Modeling" description="lorem ipsum" src="https://evoteks.co.id/images/portfolio/portfolio_8_1482502287.mp4">
+             
                 <img src="assets/img/booth.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -322,14 +328,17 @@ id="bootstrap-css"
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+              <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="Budi Luhur University" description="lorem ipsum" src=" https://evoteks.co.id/images/portfolio/portfolio_12_1482521522.mp4">
                 <img src="assets/img/UBL.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
                   <h3 class="porto">Budi Luhur University</h3>
                 </div>
               </article>
-              <article class="portfolio__card swiper-slide">
+               <article class="portfolio__card swiper-slide multimedia" data-toggle="modal" data-target="#bebas"
+              title="Creative Advertising" description="lorem ipsum" src=" https://evoteks.co.id/images/portfolio/portfolio_13_1482581725.mp4">
+
                 <img
                   src="assets/img/creative.png"
                   alt=""
@@ -351,7 +360,26 @@ id="bootstrap-css"
           </div>
         </div>
       </section>
-
+      <div class="modal" tabindex="-1" role="dialog" id="bebas">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--==================== VALUE ====================-->
       <section class="value section" id="ourvalue">
         <div class="value__container container grid">

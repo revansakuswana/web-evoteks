@@ -26,11 +26,12 @@ href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 rel="stylesheet"
 id="bootstrap-css"
 />
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
   <body>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -294,23 +295,33 @@ id="bootstrap-css"
           </ul>
 
           <div class="popular__container grid swiper">
-            <div class="swiper-wrapper">
-              <article
-              class="portfolio__card swiper-slide trigger-modal"
-              title="Ini Article 1"
-            >
-              <img
+            <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="Telkomsel"
+                description="lorem ipsum"
                 src="assets/img/telkomsel.png"
-                alt=""
-                class="portfolio__img"
-              />
+              >
+                <img
+                  src="assets/img/telkomsel.png"
+                  alt=""
+                  class="portfolio__img"
+                />
 
-              <div class="portfolio__data">
-                <h3 class="porto">Telkomsel</h3>
-              </div>
-            </article>
+                <div class="portfolio__data">
+                  <h3 class="porto">Telkomsel</h3>
+                </div>
+              </article>
 
-              <article class="portfolio__card swiper-slide">
+              <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="Novo Nordisk"
+                description="lorem ipsum"
+                src="assets/img/Novo.png"
+              >
                 <img src="assets/img/Novo.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -318,7 +329,14 @@ id="bootstrap-css"
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+              <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="Isuzu"
+                description="lorem ipsum"
+                src="assets/img/isuzu.png"
+              >
                 <img src="assets/img/isuzu.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -357,6 +375,26 @@ id="bootstrap-css"
               <button class="btn btn-default" data-dismiss="modal">
                 Close
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" role="dialog" id="bebas">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
             </div>
           </div>
         </div>
