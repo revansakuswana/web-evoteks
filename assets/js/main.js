@@ -19,14 +19,44 @@ let swiperportofolio = new Swiper(".popular__container", {
       prevEl: ".swiper-button-prev",
     },
 })
-$("article.trigger-modal").click(function (event) {
+$("article.multimedia").click(function (event) {
+    console.log(event);
     event.preventDefault();
     var content = $(".modal-body");
     content.empty();
     var title = $(this).attr("title");
+    var description = $(this).attr("description");
     $(".modal-title").html(title);
-    content.html($(this).html());
-    $(".modal-profile").modal({ show: true });
+    console.log($(this).html());
+    var src = $(this).attr("src");
+  
+    $(
+      ".modal-body"
+    ).append(`<video width="320" height="240" autoplay="false" controls>
+      <source src="${src}" type="video/mp4">      
+      Your browser does not support the video tag.
+      </video>`);
+  
+    console.log(description);
+    $(".modal-body").append(`<p>${description}</p>`);
+  });
+  
+  $("article.mobile").click(function (event) {
+    console.log(event);
+    event.preventDefault();
+    var content = $(".modal-body");
+    content.empty();
+    var title = $(this).attr("title");
+    var description = $(this).attr("description");
+    $(".modal-title").html(title);
+    var src = $(this).attr("src");
+  
+    $(".modal-body").append(`<img
+    src="${src}"
+    alt="${title}"
+    class="portfolio__img"/>`);
+    console.log(description);
+    $(".modal-body").append(`<p>${description}</p>`);
   });
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
