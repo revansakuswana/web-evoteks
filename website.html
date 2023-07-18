@@ -257,7 +257,7 @@
         <div class="portfolio">
           <h2 class="portfolio__title">Portfolio</h2>
 
-          <ul class="nav justify-content-center">
+          <ul class="nav justify-content-start">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" href="index.html#portfolio"
                 ><button class="filter">Mobile</button>
@@ -279,7 +279,14 @@
 
           <div class="popular__container grid swiper">
             <div class="swiper-wrapper">
-              <article class="portfolio__card swiper-slide">
+           <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="BRI"
+                description="lorem ipsum"
+                src="assets/img/BRI.png"
+              >
                 <img src="assets/img/BRI.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -287,32 +294,62 @@
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+               <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="Mandiri"
+                description="lorem ipsum"
+                src="assets/img/mandiri.png"
+              >
                 <img
                   src="assets/img/mandiri.png"
                   alt=""
-                  class="portfolio__img" />
+                  class="portfolio__img"
+                />
 
                 <div class="portfolio__data">
                   <h3 class="porto">Mandiri</h3>
                 </div>
               </article>
 
-              <article class="portfolio__card swiper-slide">
+                 <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="BSI"
+                description="lorem ipsum"
+                src="assets/img/BSI.png"
+              >
                 <img src="assets/img/BSI.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
                   <h3 class="porto">BSI</h3>
                 </div>
               </article>
-              <article class="portfolio__card swiper-slide">
+           
+                <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="BCA"
+                description="lorem ipsum"
+                src="assets/img/BCA.png"
+              >
                 <img src="assets/img/BCA.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
                   <h3 class="porto">BCA</h3>
                 </div>
               </article>
-              <article class="portfolio__card swiper-slide">
+               <article
+                class="portfolio__card swiper-slide mobile"
+                data-toggle="modal"
+                data-target="#bebas"
+                title="BNI"
+                description="lorem ipsum"
+                src="assets/img/BNI.png"
+              >
                 <img src="assets/img/BNI.png" alt="" class="portfolio__img" />
 
                 <div class="portfolio__data">
@@ -330,6 +367,22 @@
           </div>
         </div>
       </section>
+      <div class="modal" tabindex="-1" role="dialog" id="bebas">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
       <!--==================== VALUE ====================-->
       <section class="value section" id="ourvalue">
