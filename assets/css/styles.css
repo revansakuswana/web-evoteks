@@ -200,9 +200,6 @@ body.dark-theme {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-section {
-  padding: 60px 0;
-}
 
 section .section-title {
   text-align: center;
@@ -366,12 +363,12 @@ ul.nav__list {
 }
 
 .section {
-  padding: 4.5rem 0 2rem;
+  padding: 2rem 0 2rem;
 }
 
 .section__title {
   font-size: var(--h2-font-size);
-  margin-bottom: 1rem;
+  margin: 1rem;
   color: #a67e00;
 }
 
@@ -433,6 +430,13 @@ a.nav-link.active {
 
 .nav__logo:hover {
   color: var(--first-color);
+}
+
+.text a {
+  color: #000;
+}
+.text:hover a {
+  color: #fff;
 }
 
 @media screen and (max-width: 1023px) {
@@ -826,7 +830,7 @@ span.arrow:before {
 }
 
 .popular__card:hover {
-  box-shadow: 0 12px 16px hsl(46, 100%, 33%);
+  box-shadow: 0 12px 16px hsla(0, 0%, 100%, 0.513);
 }
 
 .portfolio__container {
@@ -874,8 +878,8 @@ span.arrow:before {
 .portfolio__title {
   font-size: var(--h2-font-size);
   text-align: center;
-  color: hsl(52, 100%, 49%);
-  padding: 1.5rem;
+  color: var(--first-color);
+  padding-top: 4rem;
   margin: 0;
 }
 .porto {
@@ -890,7 +894,7 @@ span.arrow:before {
 }
 
 .portfolio__card:hover {
-  box-shadow: 0 12px 16px hsl(46, 100%, 33%);
+  box-shadow: 0 12px 16px hsla(0, 0%, 100%, 0.213);
 }
 
 /* Swiper class */
@@ -1091,7 +1095,7 @@ p.contact__card-description {
 .contact__card-info {
   display: flex;
   align-items: flex-start;
-  column-gap: 0.75rem;
+  column-gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
@@ -1226,7 +1230,6 @@ p.contact__card-description {
 
 .footer__title {
   color: #f9d700;
-  font-size: var(--h3-font-size);
 }
 
 .footer__links {
@@ -1248,7 +1251,7 @@ p.contact__card-description {
 }
 
 .footer__social-link {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--body-color);
   transition: 0.3s;
 }
@@ -1448,16 +1451,18 @@ p.contact__card-description {
   img.logo {
     max-width: 60%;
     margin-top: 1px;
+    padding-left: 15px;
   }
   .nav__menu {
     padding: 1.3rem 1.5rem;
   }
   .section {
-    padding: 5.5rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
   h2.section__title {
     text-align: center;
     color: #a67e00;
+    padding: 1rem;
   }
   .home {
     padding-bottom: 0;
@@ -1477,7 +1482,7 @@ p.contact__card-description {
   }
   /*revan*/
   img.logo__home {
-    width: 30%;
+    width: 70%;
   }
 
   div.home__logo {
@@ -1524,19 +1529,9 @@ p.contact__card-description {
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 1rem;
+    padding-bottom: 4rem;
     opacity: 0;
     transition: opacity 2s ease-in-out;
-  }
-  .home__value {
-    column-gap: 1rem;
-  }
-  .home__img {
-    width: 220px;
-    height: 280px;
-  }
-  .home__orbe {
-    width: 240px;
-    height: 264px;
   }
   .logos__container {
     gap: 2rem 1rem;
@@ -1545,6 +1540,9 @@ p.contact__card-description {
   .services__card {
     width: 230px;
     padding: 0.5rem 0.5rem 0.75rem;
+  }
+  .pb-5 {
+    padding: 0;
   }
 
   p.value__accordion-description {
@@ -1560,6 +1558,98 @@ p.contact__card-description {
 
   .popular__data {
     padding: 0 0.25rem 0 0.75rem;
+  }
+  .company {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+  }
+  .btn {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    z-index: 1;
+  }
+  button.btn {
+    background: #fff;
+    border-radius: 5rem;
+  }
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #000;
+    border-radius: 50px;
+    top: -3px;
+    left: -1px;
+    z-index: 2;
+    transition: 0.5s cubic-bezier(1, 0, 0.8, 1);
+  }
+  span.circle {
+    margin-top: 2px;
+    height: 50px;
+    max-width: 20%;
+  }
+  .btn:hover .circle {
+    max-width: 101%;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+    top: 1rem;
+    left: 0.9rem;
+    transition: 0.5s;
+  }
+
+  span.arrow:before {
+    margin-bottom: 0px;
+  }
+
+  .btn:hover .arrow {
+    left: 25px;
+  }
+
+  .arrow:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transform: rotate(-45deg);
+    left: -8px;
+    top: 9px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .btn:hover .arrow:before {
+    opacity: 1;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-size: 6px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    z-index: 3;
+    transition: 0.5s;
+  }
+
+  .btn:hover .text {
+    color: #fff;
   }
   /* update senin 10 juli */
 
@@ -1594,7 +1684,7 @@ p.contact__card-description {
     font-size: var(--h2-font-size);
     text-align: center;
     color: hsl(52, 100%, 49%);
-    padding: 1.5rem;
+    padding: 2rem;
     margin: 0;
   }
   .porto {
@@ -1609,7 +1699,7 @@ p.contact__card-description {
   }
 
   .portfolio__card:hover {
-    box-shadow: 0 12px 16px hsl(46, 100%, 33%);
+    box-shadow: 0 12px 16px hsl(0, 0%, 100%, 0.213);
   }
 
   /* Swiper class */
@@ -1633,7 +1723,7 @@ p.contact__card-description {
   }
   /* swiper rendy */
   .swiper-button-prev {
-    left: calc(31% - 3rem);
+    left: calc(32% - 3rem);
     margin-bottom: 3rem;
   }
 
@@ -1799,14 +1889,13 @@ p.contact__card-description {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 1rem;
-    padding-top: 2rem;
   }
   .contact__card-box {
     padding: 0.75rem;
     width: 100%;
   }
   .contact__card-info {
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
   /*revan*/
   .contact__card i {
@@ -1859,7 +1948,7 @@ p.contact__card-description {
     font-size: 2.5rem;
   }
   .contact__card-info {
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
   .subscribe__container {
     padding: 3rem 13rem;
@@ -1877,15 +1966,18 @@ p.contact__card-description {
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section {
-    padding: 8rem 0 5rem;
+    padding: 7rem 0 7rem;
   }
   /*revan*/
   .section__title {
-    font-size: 2rem;
     text-align: center;
   }
   .section__subtitle {
     font-size: var(--normal-font-size);
+  }
+  .download.download {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .nav {
@@ -1959,7 +2051,7 @@ p.contact__card-description {
     background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
   }
   /*revan*/
   .home__container {
@@ -2006,6 +2098,7 @@ p.contact__card-description {
   }
   /*revan*/
   p.home__description {
+    font-size: large;
     margin-bottom: 3rem;
     padding-top: 0rem;
     opacity: 0;
