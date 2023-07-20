@@ -132,7 +132,7 @@ const sr = ScrollReveal({
     delay: 500,
 })
 
-sr.reveal(`.home__title, .home__title2, .services__container, .portofolio__container, div.content.bg-white, .footer__container`)
+sr.reveal(`.home__title, .home__title2, .services, .portofolio__container, div.content.bg-white, .footer__container`)
 sr.reveal(`.footer__info`, {delay: 500})
 sr.reveal(`.home__images, .company, img.img-fluid`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
