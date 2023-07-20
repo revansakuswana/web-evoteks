@@ -15,48 +15,48 @@ let swiperportofolio = new Swiper(".popular__container", {
     loop: true,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 })
 $("article.multimedia").click(function (event) {
-  console.log(event);
-  event.preventDefault();
-  var content = $(".modal-body");
-  content.empty();
-  var title = $(this).attr("title");
-  var description = $(this).attr("description");
-  $(".modal-title").html(title);
-  console.log($(this).html());
-  var src = $(this).attr("src");
+    console.log(event);
+    event.preventDefault();
+    var content = $(".modal-body");
+    content.empty();
+    var title = $(this).attr("title");
+    var description = $(this).attr("description");
+    $(".modal-title").html(title);
+    console.log($(this).html());
+    var src = $(this).attr("src");
 
-  $(
-    ".modal-body"
-  ).append(`<video width="320" height="240" autoplay="false" controls>
-      <source src="${src}" type="video/mp4">      
-      Your browser does not support the video tag.
-      </video>`);
+    $(
+        ".modal-body"
+    ).append(`<video width="320" height="240" autoplay="false" controls>
+    <source src="${src}" type="video/mp4">      
+    Your browser does not support the video tag.
+    </video>`);
 
-  console.log(description);
-  $(".modal-body").append(`<p>${description}</p>`);
+    console.log(description);
+    $(".modal-body").append(`<p>${description}</p>`);
 });
 
 $("article.mobile").click(function (event) {
-  console.log(event);
-  event.preventDefault();
-  var content = $(".modal-body");
-  content.empty();
-  var title = $(this).attr("title");
-  var description = $(this).attr("description");
-  $(".modal-title").html(title);
-  var src = $(this).attr("src");
+    console.log(event);
+    event.preventDefault();
+    var content = $(".modal-body");
+    content.empty();
+    var title = $(this).attr("title");
+    var description = $(this).attr("description");
+    $(".modal-title").html(title);
+    var src = $(this).attr("src");
 
-  $(".modal-body").append(`<img
+    $(".modal-body").append(`<img
     src="${src}"
     alt="${title}"
     class="portfolio__img"/>`);
-  console.log(description);
-  $(".modal-body").append(`<p>${description}</p>`);
+    console.log(description);
+    $(".modal-body").append(`<p>${description}</p>`);
 });
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
@@ -104,8 +104,8 @@ function scrollActive(){
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -140,8 +140,8 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -185,15 +185,15 @@ logoElement.style.opacity = '1';
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title');
-  textElement.style.opacity = '1';
+    textElement.style.opacity = '1';
 }, 1000);
 
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-  }, 1500)
+    }, 1500)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-  }, 1500)   
+}, 1500)   
