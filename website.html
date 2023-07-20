@@ -21,11 +21,13 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!--=============== CARD BOOTSTRAP ============-->
+    <!--=============== BOOTSTRAP ============-->
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
       id="bootstrap-css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
@@ -115,145 +117,59 @@
       </section>
 
       <!--==================== SERVICES ====================-->
-      <section class="section" id="services">
-        <section id="team" class="pb-5">
-          <div class="container">
-            <h2 class="section__title">Services</h2>
-            <div class="row">
-              <!-- Team member -->
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">IT Consultant</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">IT Consultant</h3>
-                          <p class="card-text">we provide :</p>
-                          <ul class="card-text">
-                            <li class="ul__class">
-                              Software development including desktop, web and
-                              mobile programming
-                            </li>
-                            <li class="ul__class">Hardware procurement</li>
-                            <li class="ul__class">
-                              Multimedia including animation studio 2D and 3D,
-                              animating company profile and graphic design
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ./Team member -->
-              <!-- Team member -->
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">Supplier</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">Supplier</h3>
-
-                          <p class="card-text">we provide :</p>
-                          <ul class="card-text">
-                            <li class="ul__class">
-                              Software development including desktop, web and
-                              mobile programming
-                            </li>
-                            <li class="ul__class">Hardware procurement</li>
-                            <li class="ul__class">
-                              Multimedia including animation studio 2D and 3D,
-                              animating company profile and graphic design
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">HR Consultant</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">HR Consultant</h3>
-                          <p class="card-text">we provide :</p>
-                          <ul>
-                            <li class="ul__class">
-                              Personnel assessment including psychological and
-                              competency based assessment
-                            </li>
-                            <li class="ul__class">Organizational assessment</li>
-                            <li class="ul__class">
-                              Learning and development including training
-                              program development and coaching
-                            </li>
-                            <li class="ul__class">
-                              Organizational Development
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section class="services section" id="services">
+        <h2 class="section__title" >Services</h2>
+        <div class="container__service">
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2>IT Consultant</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Software development including desktop, web and mobile programming</br>
+                Hardware procurement</br>
+                Multimedia including animation studio 2D and
+                3D, animating company profile and graphic design
+              </p>
             </div>
           </div>
-        </section>
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular2.jpg" alt=""/>
+            </div>
+            <div class="content">
+              <h2>Supplier</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Software development including desktop, web and mobile programming</br>
+                Hardware procurement</br>
+                Multimedia including animation studio 2D and
+                3D, animating company profile and graphic design
+              </p>
+            </div>
+          </div>
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular3.jpg" alt=""/>
+            </div>
+            <div class="content">
+              <h2>HR Consultant</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Personnel assessment including psychological and competency based
+                assessment</br> 
+                Organizational assessment Learning and development
+                including training program development and coaching</br>
+                Organizational Development
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- ======portfolio================== -->
-       <section class="section" id="portfolio">
+      <section class="section" id="portfolio">
         <div class="portfolio">
           <h2 class="portfolio__title">Portfolio</h2>
 
@@ -370,135 +286,11 @@
       <div class="modal" tabindex="-1" role="dialog" id="bebas">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
             <div class="modal-body">
-              <p>Modal body text goes here.</p>
             </div>
-            
           </div>
         </div>
       </div>
-
-      <!--==================== VALUE ====================-->
-      <section class="value section" id="ourvalue">
-        <div class="value__container container grid">
-          <div class="value__images">
-            <div class="value__orbe"></div>
-
-            <div class="value__img">
-              <img src="assets/img/favicon.png" alt="" />
-            </div>
-          </div>
-
-          <div class="value__content">
-            <div class="value__data">
-              <h2 class="section__title">Value We Give To You<span>.</span></h2>
-            </div>
-
-            <div class="value__accordion">
-              <div class="value__accordion-item">
-                <header class="value__accordion-header">
-                  <i class="bx bxs-group value__accordion-icon"></i>
-                  <h3 class="value__accordion-title">Social</h3>
-                  <div class="value__accordion-arrow">
-                    <i class="bx bxs-down-arrow"></i>
-                  </div>
-                </header>
-
-                <div class="value__accordion-content">
-                  <p class="value__accordion-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-
-              <div class="value__accordion-item">
-                <header class="value__accordion-header">
-                  <i class="bx bxs-briefcase value__accordion-icon"></i>
-                  <h3 class="value__accordion-title">Commitment</h3>
-                  <div class="value__accordion-arrow">
-                    <i class="bx bxs-down-arrow"></i>
-                  </div>
-                </header>
-
-                <div class="value__accordion-content">
-                  <p class="value__accordion-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-
-              <div class="value__accordion-item">
-                <header class="value__accordion-header">
-                  <i class="bx bxs-search-alt-2 value__accordion-icon"></i>
-                  <h3 class="value__accordion-title">Educated</h3>
-                  <div class="value__accordion-arrow">
-                    <i class="bx bxs-down-arrow"></i>
-                  </div>
-                </header>
-
-                <div class="value__accordion-content">
-                  <p class="value__accordion-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-
-              <div class="value__accordion-item">
-                <header class="value__accordion-header">
-                  <i class="bx bxs-bar-chart-square value__accordion-icon"></i>
-                  <h3 class="value__accordion-title">Future Centric</h3>
-                  <div class="value__accordion-arrow">
-                    <i class="bx bxs-down-arrow"></i>
-                  </div>
-                </header>
-
-                <div class="value__accordion-content">
-                  <p class="value__accordion-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-
-              <div class="value__accordion-item">
-                <header class="value__accordion-header">
-                  <i class="bx bxs-bulb value__accordion-icon"></i>
-                  <h3 class="value__accordion-title">Inovation</h3>
-                  <div class="value__accordion-arrow">
-                    <i class="bx bxs-down-arrow"></i>
-                  </div>
-                </header>
-
-                <div class="value__accordion-content">
-                  <p class="value__accordion-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!--==================== PARTNERS ====================-->
       <section class="partners section" id="partners">
@@ -708,9 +500,5 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-
-    <!--=============== BOOTSTRAP ============-->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
