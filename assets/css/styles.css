@@ -1588,7 +1588,7 @@ div.footer__info.container {
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
     opacity: 0;
     transition: opacity 2s ease-in-out;
   }
@@ -1655,7 +1655,7 @@ div.footer__info.container {
     max-width: 20%;
   }
   .btn:hover .circle {
-    max-width: 101%;
+    max-width: 99.9%;
   }
 
   .arrow {
