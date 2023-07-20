@@ -19,44 +19,14 @@ let swiperportofolio = new Swiper(".popular__container", {
       prevEl: ".swiper-button-prev",
     },
 })
-$("article.multimedia").click(function (event) {
-    console.log(event);
+$("article.trigger-modal").click(function (event) {
     event.preventDefault();
-    var content = $(".modal-body");
+    let content = $(".modal-body");
     content.empty();
-    var title = $(this).attr("title");
-    var description = $(this).attr("description");
+    let title = $(this).attr("title");
     $(".modal-title").html(title);
-    console.log($(this).html());
-    var src = $(this).attr("src");
-  
-    $(
-      ".modal-body"
-    ).append(`<video width="320" height="240" autoplay="false" controls>
-      <source src="${src}" type="video/mp4">      
-      Your browser does not support the video tag.
-      </video>`);
-  
-    console.log(description);
-    $(".modal-body").append(`<p>${description}</p>`);
-  });
-  
-  $("article.mobile").click(function (event) {
-    console.log(event);
-    event.preventDefault();
-    var content = $(".modal-body");
-    content.empty();
-    var title = $(this).attr("title");
-    var description = $(this).attr("description");
-    $(".modal-title").html(title);
-    var src = $(this).attr("src");
-  
-    $(".modal-body").append(`<img
-    src="${src}"
-    alt="${title}"
-    class="portfolio__img"/>`);
-    console.log(description);
-    $(".modal-body").append(`<p>${description}</p>`);
+    content.html($(this).html());
+    $(".modal-profile").modal({ show: true });
   });
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
@@ -100,7 +70,7 @@ const toggleItem = (item) =>{
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.scrollY
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight,
@@ -159,14 +129,12 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
-    delay: 1000,
+    delay: 500,
 })
 
-sr.reveal(`.home__title, .home__title2, .services__container, .portofolio__container, .footer__container`)
-sr.reveal(`.home__description, .footer__info`, {delay: 500})
-sr.reveal(`.home__search`, {delay: 600})
-sr.reveal(`.home__value`, {delay: 700})
-sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.home__title, .home__title2, .services__container, .portofolio__container, div.content.bg-white, .footer__container`)
+sr.reveal(`.footer__info`, {delay: 500})
+sr.reveal(`.home__images, .company, img.img-fluid`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
@@ -174,7 +142,7 @@ sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
 // Menunggu halaman selesai dimuat
 window.onload = function() {
 // Mengambil elemen logo
-var logoElement = document.querySelector('div.home__logo');
+let logoElement = document.querySelector('div.home__logo');
 // Mengubah opasitas dari 0 menjadi 100%
 logoElement.style.opacity = '1';
 
@@ -186,16 +154,16 @@ logoElement.style.opacity = '1';
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
-  var textElement = document.querySelector('h1.home__title');
-  textElement.style.opacity = '2';
+    let textElement = document.querySelector('h1.home__title');
+  textElement.style.opacity = '1';
 }, 1000);
 
 setTimeout(function() {
-    var textElement = document.querySelector('h1.home__title2');
-    textElement.style.opacity = '3';
-  }, 2500)
+    let textElement = document.querySelector('h1.home__title2');
+    textElement.style.opacity = '1';
+  }, 1500)
 
 setTimeout(function() {
-    var textElement = document.querySelector('p.home__description');
-    textElement.style.opacity = '3';
-  }, 2500)  
+    let textElement = document.querySelector('p.home__description');
+    textElement.style.opacity = '1';
+  }, 1500)   
