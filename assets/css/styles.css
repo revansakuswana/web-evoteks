@@ -1672,15 +1672,15 @@ div.footer__info.container {
 
   span.arrow {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-top: 3px solid #fff;
     border-right: 3px solid #fff;
     transform: rotate(45deg);
-    top: 13px;
-    left: 10px;
+    top: 16px;
+    left: 15px;
     transition: 0.5s;
-}
+  }
 
   span.arrow:before {
     margin-bottom: 0px;
@@ -1693,12 +1693,12 @@ div.footer__info.container {
   .arrow:before {
     content: "";
     position: absolute;
-    width: 25px;
+    width: 21px;
     height: 3px;
     background: #fff;
     transform: rotate(-45deg);
-    left: -8px;
-    top: 9px;
+    left: -4px;
+    top: 4px;
     opacity: 0;
     transition: 0.5s;
   }
