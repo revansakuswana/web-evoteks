@@ -1864,9 +1864,13 @@ div.footer__info.container {
     padding-top: 0rem;
     row-gap: 1.5rem;
   }
+
+  div.footer__container.container.grid {
+    padding: 0 1rem;
+  }
   .footer__content {
     gap: 2.5rem;
-    padding-left: 1.5rem;
+    padding: 0 1rem;
   }
 
   .footer__nama {
