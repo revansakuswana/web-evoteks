@@ -29,37 +29,34 @@ $("article.multimedia").click(function (event) {
     $(".modal-title").html(title);
     console.log($(this).html());
     let src = $(this).attr("src");
-  
+
     $(
-      ".modal-body"
+    ".modal-body"
     ).append(`<video width="465" height="350" autoplay="false" controls>
         <source src="${src}" type="video/mp4">      
         Your browser does not support the video tag.
         </video>`);
-  
+
     console.log(description);
     $(".modal-body").append(`<h5>${title}</h5>`);
     $(".modal-body").append(`<p>${description}</p>`);
-    
-    
-  });
-  
-  $("article.mobile").click(function (event) {
+    });
+    $("article.mobile").click(function (event) {
     event.preventDefault();
     let content = $(".modal-body");
     content.empty();
     let title = $(this).attr("title");
     let description = $(this).attr("description");
-  
+
     let src = $(this).attr("src");
-  
+
     $(".modal-body").append(`<img
-      src="${src}"
-      alt="${title}"
-      class="portfolio__img"/>`);
+        src="${src}"
+        alt="${title}"
+        class="portfolio__img"/>`);
     $(".modal-body").append(`<h5>${title}</h5>`);
     $(".modal-body").append(`<p>${description}</p>`);
-  });
+    });
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
 
