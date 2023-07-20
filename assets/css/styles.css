@@ -891,7 +891,6 @@ span.arrow:before {
   text-align: left;
 }
 
-
 .portfolio__card {
   width: 330px;
   background-color: #fff;
@@ -1610,7 +1609,6 @@ div.footer__info.container {
 
   .popular__container {
     height: 26rem;
-
     padding-bottom: 1rem;
     width: 38rem;
   }
@@ -1623,7 +1621,7 @@ div.footer__info.container {
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2.5rem;
+    padding-bottom: 4.5rem;
   }
   .btn {
     position: relative;
@@ -1732,7 +1730,7 @@ div.footer__info.container {
     font-weight: 600;
     z-index: 3;
     transition: 0.5s;
-}
+  }
 
   .btn:hover .text {
     color: #fff;
