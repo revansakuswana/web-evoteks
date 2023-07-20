@@ -21,11 +21,13 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!--=============== CARD BOOTSTRAP ============-->
+    <!--=============== BOOTSTRAP ============-->
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
       id="bootstrap-css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
@@ -126,142 +128,56 @@
       </section>
 
       <!--==================== SERVICES ====================-->
-      <section class="section" id="services">
-        <section id="team" class="pb-5">
-          <div class="container">
-            <h2 class="section__title">Services</h2>
-            <div class="row">
-              <!-- Team member -->
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">IT Consultant</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">IT Consultant</h3>
-                          <p class="card-text">we provide :</p>
-                          <ul class="card-text">
-                            <li class="ul__class">
-                              Software development including desktop, web and
-                              mobile programming
-                            </li>
-                            <li class="ul__class">Hardware procurement</li>
-                            <li class="ul__class">
-                              Multimedia including animation studio 2D and 3D,
-                              animating company profile and graphic design
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ./Team member -->
-              <!-- Team member -->
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">Supplier</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">Supplier</h3>
-
-                          <p class="card-text">we provide :</p>
-                          <ul class="card-text">
-                            <li class="ul__class">
-                              Software development including desktop, web and
-                              mobile programming
-                            </li>
-                            <li class="ul__class">Hardware procurement</li>
-                            <li class="ul__class">
-                              Multimedia including animation studio 2D and 3D,
-                              animating company profile and graphic design
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div
-                  class="image-flip"
-                  ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p>
-                            <img
-                              class="img-fluid"
-                              src="assets/img/popular4.jpg"
-                              alt="card image" />
-                          </p>
-                          <h3 class="card-title">HR Consultant</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h3 class="card-title">HR Consultant</h3>
-                          <p class="card-text">we provide :</p>
-                          <ul>
-                            <li class="ul__class">
-                              Personnel assessment including psychological and
-                              competency based assessment
-                            </li>
-                            <li class="ul__class">Organizational assessment</li>
-                            <li class="ul__class">
-                              Learning and development including training
-                              program development and coaching
-                            </li>
-                            <li class="ul__class">
-                              Organizational Development
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section class="services section" id="services">
+        <h2 class="section__title" >Services</h2>
+        <div class="container__service">
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular1.jpg" />
+            </div>
+            <div class="content">
+              <h2>IT Consultant</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Software development including desktop, web and mobile programming</br>
+                Hardware procurement</br>
+                Multimedia including animation studio 2D and
+                3D, animating company profile and graphic design
+              </p>
             </div>
           </div>
-        </section>
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular2.jpg" />
+            </div>
+            <div class="content">
+              <h2>Supplier</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Software development including desktop, web and mobile programming</br>
+                Hardware procurement</br>
+                Multimedia including animation studio 2D and
+                3D, animating company profile and graphic design
+              </p>
+            </div>
+          </div>
+          <div class="card__service">
+            <div class="imgBx">
+              <img src="assets/img/popular3.jpg" />
+            </div>
+            <div class="content">
+              <h2>HR Consultant</h2>
+              <h3>We Provide :</h3>
+              <p>
+                Personnel assessment including psychological and competency based
+                assessment</br> 
+                Organizational assessment Learning and development
+                including training program development and coaching</br>
+                Organizational Development
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!--====== PORTOFOLIO ==================-->
       <section class="section" id="portfolio">
@@ -597,7 +513,7 @@
                 href="https://www.linkedin.com/company/pt-evolusi-teknologi-solusi/"
                 target="_blank"
                 class="footer__social-link">
-                <i class="bx bxl-linkedin"></i>
+                <i class="bx bxl-linkedin-square"></i>
               </a>
               <a
                 href="https://www.instagram.com/evoteks.id/"
@@ -639,9 +555,5 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-
-    <!--=============== BOOSTRAP ===============-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
