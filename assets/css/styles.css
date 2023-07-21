@@ -2493,10 +2493,11 @@ div.footer__info.container {
 
 #preloader {
   background: #fff
-    url(https://wpdaddy.com/wp-content/uploads/2019/05/hand-animation-loader.gif)
+    url(https://cdn.dribbble.com/users/563824/screenshots/3306683/untitled-6-110.gif)
     no-repeat center center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
+  transition-duration: 1.1s;
 }
