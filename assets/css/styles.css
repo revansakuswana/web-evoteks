@@ -2490,3 +2490,13 @@ div.footer__info.container {
     zoom: 2;
   }
 }
+
+#preloader {
+  background: #fff
+    url(https://wpdaddy.com/wp-content/uploads/2019/05/hand-animation-loader.gif)
+    no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
