@@ -2499,5 +2499,5 @@ div.footer__info.container {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  transition-duration: 1.1s;
+  animation-duration: 1s;
 }
