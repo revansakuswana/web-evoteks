@@ -910,12 +910,23 @@ span.arrow:before {
   border: 8px solid #fff0;
   border-radius: 20px;
 }
+
+.filter:hover {
+  color: #f1f4ff;
+  background-color: hsla(0, 0%, 100%, 0.354);
+  box-shadow: 0 2px 5px hsl(0, 0%, 0%);
+}
+
 .portfolio__img {
   border-radius: 1rem;
   margin-bottom: 2rem;
   height: 20.8rem;
   width: 29rem;
   background-color: hsla(195, 83%, 58%, 0.2);
+}
+
+.portfolio__img:hover {
+  box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.354);
 }
 
 .portfolio__data {
@@ -2491,13 +2502,109 @@ div.footer__info.container {
   }
 }
 
-#preloader {
-  background: #fff
-    url(https://cdn.dribbble.com/users/563824/screenshots/3306683/untitled-6-110.gif)
-    no-repeat center center;
-  height: 100%;
+.loadscreen {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 1000;
-  animation: 2s;
+  animation: loads 0.5s forwards cubic-bezier(0, 0, 0, 0);
+  animation-delay: 3s;
+}
+
+.preloader {
+  background: var(--container-color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  animation: preload 0.5s forwards cubic-bezier(0, 0, 0, 0);
+  animation-delay: 2s;
+}
+
+.loader {
+  background: url(https://lottie.host/252a2b26-e9f9-47fb-b04d-84452aa2ec50/UNj7dfcBGh.json)
+    no-repeat center center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 500;
+  animation: load 0.1s forwards cubic-bezier(0, 0, 0, 0);
+  animation-delay: 2s;
+}
+
+/* .loader {
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.loading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .line-box {
+  width: 30%;
+  height: 20px;
+  border: 2px solid #267591;
+  border-radius: 20px;
+}
+
+.loading .line-box .line {
+  height: 15px;
+  border-radius: 20px;
+  background: #67d295;
+  animation: loading 2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+@keyframes loads {
+  0% {
+  }
+  100% {
+    width: 0%;
+    margin-left: -100rem;
+  }
+}
+
+@keyframes preload {
+  0% {
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
+  }
 }
