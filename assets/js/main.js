@@ -157,8 +157,8 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 500,
+    duration: 1500,
+    delay: 3000,
 })
 
 sr.reveal(`.home__title, .home__title2, .services, .portofolio__container, div.content.bg-white, .footer__container`)
@@ -178,7 +178,7 @@ logoElement.style.opacity = '1';
 // Menunggu 2 detik sebelum mengubah opasitas menjadi 50%
 setTimeout(function() {
 logoElement.style.opacity = '1';
-    }, 2000);
+    }, 4000);
 };
 
 // Setelah 0.5 detik, munculkan teks
