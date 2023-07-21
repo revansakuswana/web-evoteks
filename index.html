@@ -31,8 +31,9 @@
 
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
-
+  <div id="preloader"></div>
   <body>
+    
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -264,7 +265,6 @@
       <div class="modal" tabindex="-1" role="dialog" id="bebas">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-
             <div class="modal-body">
             </div>
           </div>
@@ -545,5 +545,13 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      var loader = document.getElementById("preloader")
+      window = addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+
   </body>
 </html>
