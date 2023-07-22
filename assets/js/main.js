@@ -156,12 +156,14 @@ themeButton.addEventListener('click', () => {
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 1500,
+    distance: '70px',
+    duration: 2000,
     delay: 3000,
 })
 
-sr.reveal(`.home__title, .home__title2, .services, .portofolio__container, div.content.bg-white, .footer__container`)
+sr.reveal(`.home__title, .services, .portofolio__container, div.content.bg-white, .footer__container`)
+sr.reveal(`.home__title`, {origin: 'right', distance: '100px'})
+sr.reveal(`.home__title2`, {origin: 'left', distance: '100px', delay: 4000})
 sr.reveal(`.footer__info`, {delay: 500})
 sr.reveal(`.home__images, .company, img.img-fluid`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
@@ -184,9 +186,9 @@ setTimeout(function() {
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-    }, 3000)
+}, 4000)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-}, 3000)   
+}, 4500)   
