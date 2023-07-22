@@ -168,31 +168,25 @@ sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
 sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
-// Menunggu halaman selesai dimuat
-window.onload = function() {
-// Mengambil elemen logo
-let logoElement = document.querySelector('div.home__logo');
-// Mengubah opasitas dari 0 menjadi 100%
-logoElement.style.opacity = '1';
 
-// Menunggu 2 detik sebelum mengubah opasitas menjadi 50%
 setTimeout(function() {
-logoElement.style.opacity = '1';
-    }, 4000);
-};
+    let logoElement = document.querySelector('div.home__logo');
+    logoElement.style.opacity = '1';
+}, 2000);
+
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title');
     textElement.style.opacity = '1';
-}, 1000);
+}, 3000);
 
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-    }, 1500)
+    }, 3000)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-}, 1500)   
+}, 3000)   
