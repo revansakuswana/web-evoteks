@@ -413,6 +413,16 @@ ul.nav.justify-content-start {
   margin-left: 4.5rem;
 }
 
+a.nav__link:hover {
+  color: var(--first-color);
+}
+
+a.nav__button:hover {
+  color: #fff;
+  background-color: #7f6100;
+  text-decoration: none;
+}
+
 a.nav-link.active {
   padding: 0.5rem;
 }
@@ -722,7 +732,7 @@ span.arrow:before {
 
 /*revan*/
 .button:hover {
-  box-shadow: 0 4px 12px hsla(0, 0%, 100%, 0.244);
+  box-shadow: 0 4px 12px hsl(0, 0%, 0%);
 }
 
 .nav__button {
@@ -888,7 +898,7 @@ span.arrow:before {
 
 .container__service .card__service .content p {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   text-align: left;
 }
 
@@ -1002,17 +1012,17 @@ span.arrow:before {
 
 .value__orbe {
   width: 266px;
-  height: 316px;
+  height: 266px;
   background-color: hsl(228, 24%, 97%);
-  border-radius: 135px 135px 16px 16px;
+  border-radius: 16px;
 }
 
 .value__img {
   position: absolute;
   width: 250px;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
+  border-radius: 12px;
   inset: 0;
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
@@ -1534,6 +1544,9 @@ div.footer__info.container {
     color: #a67e00;
     padding: 1rem;
   }
+  .loader {
+    width: 50%;
+  }
   .home {
     padding-bottom: 0;
   }
@@ -1870,6 +1883,7 @@ div.footer__info.container {
 
   .footer.section {
     padding-top: 2rem;
+    padding-bottom: 7rem;
   }
 
   .footer__container {
@@ -2171,26 +2185,37 @@ div.footer__info.container {
   /*revan*/
   div.home__logo {
     background-blend-mode: lighten;
-    width: 100%;
+    width: 55%;
+    scale: 80%;
+    justify-content: center;
     text-align: center;
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 2s ease-in;
   }
 
   .logo__home {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
     text-align: center;
+  }
+
+  .title__home {
+    padding-top: 5rem;
+    position: relative;
   }
 
   /*revan*/
   h1.home__title {
     color: #f9d700;
     text-align: center;
-    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
     font-family: "StevieSans-Bold";
     font-size: 50px;
     font-style: normal;
     margin: 0;
     opacity: 0;
+    text-shadow: 0 8px 12px #000;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
   /*revan*/
@@ -2198,13 +2223,13 @@ div.footer__info.container {
     text-align: center;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
     font-family: StevieSans-Bold;
     font-size: 215px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 8.6px;
     opacity: 0;
+    text-shadow: 0 12px 15px #000;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
   /*revan*/
@@ -2213,8 +2238,10 @@ div.footer__info.container {
     margin-bottom: 3rem;
     padding-top: 0rem;
     opacity: 0;
-    transition: top 1s ease-in-out, opacity 1s ease-in-out, ea;
+    text-shadow: 0 2px 5px #000;
+    transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
+
   .home__value {
     column-gap: 3.5rem;
   }
@@ -2398,6 +2425,7 @@ div.footer__info.container {
     border-radius: 12px 12px;
     transition: scale 400ms;
   }
+
   .value__img:hover {
     scale: 106%;
   }
@@ -2425,6 +2453,10 @@ div.footer__info.container {
   .maps {
     width: 500px;
     height: 500px;
+  }
+
+  .contact__img:hover {
+    scale: 106%;
   }
 
   .contact__card {
