@@ -161,11 +161,13 @@ const sr = ScrollReveal({
     delay: 3000,
 })
 
-sr.reveal(`.home__title, .services, .portofolio__container, div.content.bg-white, .footer__container`)
-sr.reveal(`.home__title`, {origin: 'right', distance: '100px'})
-sr.reveal(`.home__title2`, {origin: 'left', distance: '100px', delay: 4000})
+sr.reveal(`.home__title, .services, .portofolio__card, .footer__container`)
+sr.reveal(`.home__title`, {distance: '100px'})
+sr.reveal(`.home__title2`, {distance: '100px', delay: 4000})
+sr.reveal(`.company`, {origin: 'bottom', distance: '100px', delay: 4500})
 sr.reveal(`.footer__info`, {delay: 500})
-sr.reveal(`.home__images, .company, img.img-fluid`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
+sr.reveal(`div.content.bg-white`, {delay: 800, origin: 'top'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
@@ -174,21 +176,26 @@ sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
 setTimeout(function() {
     let logoElement = document.querySelector('div.home__logo');
     logoElement.style.opacity = '1';
-}, 2000);
+}, 1500);
+
+setTimeout(function() {
+    let logoElement = document.querySelector('div.home__logo');
+    logoElement.style.opacity = '0.5';
+}, 4000);
 
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title');
     textElement.style.opacity = '1';
-}, 3000);
+}, 4500);
 
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-}, 4000)
+}, 5000)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-}, 4500)   
+}, 5500)   
