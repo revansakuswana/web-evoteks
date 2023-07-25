@@ -2549,7 +2549,7 @@ div.footer__info.container {
   flex-direction: column;
   z-index: 1000;
   animation: loads 0.5s forwards cubic-bezier(0, 0, 0, 0);
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .preloader {
@@ -2562,8 +2562,8 @@ div.footer__info.container {
   align-items: center;
   flex-direction: column;
   z-index: 1000;
-  animation: preload 0.5s forwards cubic-bezier(0, 0, 0, 0);
-  animation-delay: 2s;
+  animation: preload 0.2s forwards cubic-bezier(0, 0, 0, 0);
+  animation-delay: 1s;
 }
 
 .loader {
@@ -2576,7 +2576,7 @@ div.footer__info.container {
   flex-direction: column;
   z-index: 500;
   animation: load 0.1s forwards cubic-bezier(0, 0, 0, 0);
-  animation-delay: 2s;
+  animation-delay: 1.8s;
 }
 
 @keyframes logs {
@@ -2645,7 +2645,7 @@ div.footer__info.container {
   border-top: 5px solid;
   margin: 5px;
   animation-name: Loader_611;
-  animation-duration: 1500ms;
+  animation-duration: 1000ms;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: infinite;
