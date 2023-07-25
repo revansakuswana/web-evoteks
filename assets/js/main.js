@@ -168,10 +168,9 @@ sr.reveal(`.company`, {origin: 'bottom', distance: '100px', delay: 4500})
 sr.reveal(`.footer__info`, {delay: 500})
 sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
 sr.reveal(`div.content.bg-white, .services, .portofolio__card`,  {delay: 800, origin: 'top'})
-sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {delay: 800, origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {delay: 800, origin: 'right'})
-sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
+sr.reveal(`.logos__img, .image-flip`, { delay: 800, origin: "top" });
 
 setTimeout(function() {
     let logoElement = document.querySelector('div.home__logo');
