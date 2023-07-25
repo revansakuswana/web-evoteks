@@ -163,7 +163,7 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__title, .footer__container`)
 sr.reveal(`.home__title`, {distance: '100px'})
-sr.reveal(`.home__title2`, {distance: '100px', delay: 3000})
+sr.reveal(`.home__title2`, {distance: '100px', delay: 2500})
 sr.reveal(`.company`, {origin: 'bottom', distance: '100px', delay: 4500})
 sr.reveal(`.footer__info`, {delay: 500})
 sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
@@ -188,14 +188,14 @@ setTimeout(function() {
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title');
     textElement.style.opacity = '1';
-}, 3000);
+}, 2500);
 
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-}, 3500)
+}, 3000)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-}, 4000)   
+}, 3500)   
