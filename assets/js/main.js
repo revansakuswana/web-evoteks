@@ -158,12 +158,12 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '70px',
     duration: 2000,
-    delay: 3000,
+    delay: 2000,
 })
 
 sr.reveal(`.home__title, .footer__container`)
 sr.reveal(`.home__title`, {distance: '100px'})
-sr.reveal(`.home__title2`, {distance: '100px', delay: 4000})
+sr.reveal(`.home__title2`, {distance: '100px', delay: 3000})
 sr.reveal(`.company`, {origin: 'bottom', distance: '100px', delay: 4500})
 sr.reveal(`.footer__info`, {delay: 500})
 sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
@@ -176,26 +176,26 @@ sr.reveal(`.image-flip`, { delay: 800, origin: "top" });
 setTimeout(function() {
     let logoElement = document.querySelector('div.home__logo');
     logoElement.style.opacity = '1';
-}, 1500);
+}, 1000);
 
 setTimeout(function() {
     let logoElement = document.querySelector('div.home__logo');
     logoElement.style.opacity = '0.5';
-}, 4000);
+}, 3000);
 
 
 // Setelah 0.5 detik, munculkan teks
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title');
     textElement.style.opacity = '1';
-}, 4500);
+}, 3000);
 
 setTimeout(function() {
     let textElement = document.querySelector('h1.home__title2');
     textElement.style.opacity = '1';
-}, 5000)
+}, 3500)
 
 setTimeout(function() {
     let textElement = document.querySelector('p.home__description');
     textElement.style.opacity = '1';
-}, 5500)   
+}, 4000)   
