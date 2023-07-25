@@ -2553,7 +2553,7 @@ div.footer__info.container {
 }
 
 .preloader {
-  background: var(--container-color);
+  background: #262626;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -2567,8 +2567,6 @@ div.footer__info.container {
 }
 
 .loader {
-  background: url(https://lottie.host/252a2b26-e9f9-47fb-b04d-84452aa2ec50/UNj7dfcBGh.json)
-    no-repeat center center;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -2581,43 +2579,20 @@ div.footer__info.container {
   animation-delay: 2s;
 }
 
-/* .loader {
-  color: #000;
-  margin-bottom: 5px;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.loading {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading .line-box {
-  width: 30%;
-  height: 20px;
-  border: 2px solid #267591;
-  border-radius: 20px;
-}
-
-.loading .line-box .line {
-  height: 15px;
-  border-radius: 20px;
-  background: #67d295;
-  animation: loading 2s forwards cubic-bezier(0,0,0,0);
-}
-
-@keyframes loading {
+@keyframes logs {
   0% {
-    width: 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
   }
   100% {
-    width: 100%;
+    opacity: 0.5;
   }
-} */
+}
 
 @keyframes loads {
   0% {
@@ -2643,5 +2618,85 @@ div.footer__info.container {
   100% {
     opacity: 0;
     z-index: -1000;
+  }
+}
+
+#container {
+  width: 200px;
+  height: 250px;
+  margin: auto auto;
+}
+
+.loading-title {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: #fff;
+}
+
+.loading-circle {
+  display: block;
+  text-align: center;
+  border-left: 5px solid;
+  border-top-left-radius: 100%;
+  border-top: 5px solid;
+  margin: 5px;
+  animation-name: Loader_611;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.sp1 {
+  border-left-color: var(--first-color);
+  border-top-color: var(--first-color);
+  width: 50px;
+  height: 50px;
+}
+
+.sp2 {
+  border-left-color: #ffc107;
+  border-top-color: #ffc107;
+  width: 40px;
+  height: 40px;
+}
+
+.sp3 {
+  width: 30px;
+  height: 30px;
+  border-left-color: var(--body-color);
+  border-top-color: var(--body-color);
+}
+
+@keyframes Loader_611 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+  }
+
+  25% {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform-origin: right bottom;
+  }
+
+  75% {
+    transform: rotate(270deg);
+    transform-origin: right bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: right bottom;
   }
 }
