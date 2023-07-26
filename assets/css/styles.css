@@ -1554,6 +1554,13 @@ div.footer__info.container {
     text-decoration: none;
   }
 
+  .home {
+    background-image: url("../img/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .home__container {
     padding-top: 4rem;
     row-gap: 0rem;
@@ -1561,12 +1568,7 @@ div.footer__info.container {
   .grid {
     display: grid;
   }
-  .home {
-    background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+
   /*revan*/
   img.logo__home {
     width: 70%;
@@ -1945,14 +1947,6 @@ div.footer__info.container {
   .home__container {
     row-gap: 1rem;
   }
-  .home {
-    background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  /*revan*/
-
   /*revan*/
   .logo__home {
     width: 40%;
@@ -2176,9 +2170,10 @@ div.footer__info.container {
   }
 
   .home {
-    background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80");
+    background-image: url("../img/bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 4rem;
   }
   /*revan*/
@@ -2205,7 +2200,7 @@ div.footer__info.container {
   }
 
   .title__home {
-    padding-top: 4rem;
+    padding-top: 3rem;
     position: relative;
   }
 
@@ -2225,7 +2220,7 @@ div.footer__info.container {
   h1.home__title2 {
     text-align: center;
     color: #f9d700;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-family: "Lexend", sans-serif;
     font-size: 215px;
     font-style: normal;
@@ -2238,9 +2233,8 @@ div.footer__info.container {
   /*revan*/
   p.home__description {
     font-size: large;
-    margin-bottom: 3rem;
-    padding: 0 20rem;
-    opacity: 0;
+    margin-bottom: 4rem;
+    padding: 1rem 20rem;
     text-shadow: 0 2px 5px #000;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
