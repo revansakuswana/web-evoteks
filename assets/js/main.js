@@ -165,12 +165,15 @@ sr.reveal(`.home__title, .footer__container`)
 sr.reveal(`.home__title`, {distance: '100px'})
 sr.reveal(`.home__title2`, {distance: '100px', delay: 2500})
 sr.reveal(`.company`, {origin: 'bottom', distance: '100px', delay: 4500})
-sr.reveal(`.footer__info`, {delay: 500})
+sr.reveal(`.footer__info, .popular__container`, {delay: 500})
+sr.reveal(`.nav-link`,  {delay: 1500})
 sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
-sr.reveal(`div.content.bg-white, .services, .portofolio__card`,  {delay: 800, origin: 'top'})
-sr.reveal(`.value__images, .contact__content`, {delay: 800, origin: 'left'})
+sr.reveal(`div.content.bg-white, .services`,  {delay: 800})
+sr.reveal(`.value__images, .contact__content,`, {delay: 800, origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {delay: 800, origin: 'right'})
-sr.reveal(`.logos__img, .image-flip`, { delay: 800, origin: "top" });
+sr.reveal(`.logos__img, .image-flip`, { delay: 800});
+sr.reveal(`.swiper-button-next`, {delay: 2000, origin: 'left', distance: '30px'})
+sr.reveal(`.swiper-button-prev`, {delay: 2000, origin: 'right', distance: '30px'})
 
 setTimeout(function() {
     let logoElement = document.querySelector('div.home__logo');
