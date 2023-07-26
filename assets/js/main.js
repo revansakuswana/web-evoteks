@@ -169,7 +169,7 @@ sr.reveal(`.footer__info, .popular__container`, {delay: 500})
 sr.reveal(`.nav-link`,  {delay: 1500})
 sr.reveal(`.home__images, img.img-fluid`, {delay: 800, origin: 'bottom'})
 sr.reveal(`div.content.bg-white, .services`,  {delay: 800})
-sr.reveal(`.value__images, .contact__content,`, {delay: 800, origin: 'left'})
+sr.reveal(`.value__images, .contact__content`, {delay: 800, origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {delay: 800, origin: 'right'})
 sr.reveal(`.logos__img, .image-flip`, { delay: 800});
 sr.reveal(`.swiper-button-next`, {delay: 2000, origin: 'left', distance: '30px'})
