@@ -1,5 +1,4 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@600&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
@@ -1000,18 +999,6 @@ span.arrow:before {
   margin-bottom: 4rem;
 }
 
-.swiper-button-prev:hover {
-  background-color: #d3d3d3;
-  left: calc(50% - 3rem);
-  margin-bottom: 4rem;
-}
-
-.swiper-button-next:hover {
-  background-color: #d3d3d3;
-  right: calc(50% - 3rem);
-  margin-bottom: 4rem;
-}
-
 /*=============== VALUE ===============*/
 .value__container {
   row-gap: 3rem;
@@ -1155,7 +1142,7 @@ span.arrow:before {
 
 /*revan*/
 p.contact__card-description {
-  color: hsl(228, 12%, 8%);
+  color: #1a1919;
 }
 
 .contact__description {
@@ -1198,6 +1185,11 @@ h3.contact__card-title {
 }
 .contact__card-title {
   font-size: var(--normal-font-size);
+}
+
+/*revan*/
+p.contact__card-description {
+  color: hsl(228, 12%, 8%);
 }
 
 .contact__card-description {
@@ -1434,6 +1426,9 @@ div.footer__info.container {
     text-align: center;
   }
 
+  .home {
+    padding-bottom: 0;
+  }
   .home__container {
     padding-top: 1rem;
     row-gap: 3.5rem;
@@ -1444,6 +1439,10 @@ div.footer__info.container {
     background-size: cover;
     background-position: center;
     padding-bottom: 5rem;
+  }
+  /*revan*/
+  .home__container {
+    column-gap: rem;
   }
   /*revan*/
   div.home__logo {
@@ -1460,8 +1459,8 @@ div.footer__info.container {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.859);
-    font-family: "Lexend", sans-serif;
+    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
+    font-family: "StevieSans-Bold";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1475,7 +1474,7 @@ div.footer__info.container {
     color: #f9d700;
     text-align: center;
     text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
-    font-family: "Lexend", sans-serif;
+    font-family: "StevieSans-Bold";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -1548,19 +1547,13 @@ div.footer__info.container {
   .loader {
     width: 50%;
   }
-
   a.nav__link:hover {
-    color: #fff;
+    color: var(--body-color);
     text-decoration: none;
   }
-
   .home {
-    background-image: url("../img/bg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding-bottom: 0;
   }
-
   .home__container {
     padding-top: 4rem;
     row-gap: 0rem;
@@ -1568,7 +1561,12 @@ div.footer__info.container {
   .grid {
     display: grid;
   }
-
+  .home {
+    background-image: url("../img/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   /*revan*/
   img.logo__home {
     width: 70%;
@@ -1587,21 +1585,22 @@ div.footer__info.container {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 5px 8px rgb(0, 0, 0);
-    font-family: "Lexend", sans-serif;
+    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
+    font-family: "StevieSans-Bold";
     font-size: 20px;
     font-style: normal;
     margin: 0rem;
     padding-top: 1rem;
     opacity: 0;
+    text-shadow: 0 2px 5px #000;
     transition: 1s ease-in-out;
   }
   /*revan*/
   h1.home__title2 {
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 5px 8px rgb(0, 0, 0);
-    font-family: "Lexend", sans-serif;
+    text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    font-family: "StevieSans-Bold";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -1609,6 +1608,7 @@ div.footer__info.container {
     letter-spacing: 1px;
     padding-top: 1rem;
     opacity: 0;
+    text-shadow: 0 2px 5px #000;
     transition: 1s ease-in-out;
   }
   /*revan*/
@@ -1944,9 +1944,20 @@ div.footer__info.container {
   .grid {
     display: grid;
   }
+  .home {
+    padding-bottom: 0;
+  }
   .home__container {
     row-gap: 1rem;
   }
+  .home {
+    background-image: url("../img/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /*revan*/
+
   /*revan*/
   .logo__home {
     width: 40%;
@@ -1963,8 +1974,8 @@ div.footer__info.container {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.859);
-    font-family: "Lexend", sans-serif;
+    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
+    font-family: "StevieSans-Bold";
     font-size: 20px;
     font-style: normal;
     padding: 0rem;
@@ -1975,8 +1986,8 @@ div.footer__info.container {
   h1.home__title2 {
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
-    font-family: "Lexend", sans-serif;
+    text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    font-family: "StevieSans-Bold";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -2173,7 +2184,6 @@ div.footer__info.container {
     background-image: url("../img/bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     padding-bottom: 4rem;
   }
   /*revan*/
@@ -2200,7 +2210,7 @@ div.footer__info.container {
   }
 
   .title__home {
-    padding-top: 3rem;
+    padding-top: 4rem;
     position: relative;
   }
 
@@ -2208,7 +2218,7 @@ div.footer__info.container {
   h1.home__title {
     color: #f9d700;
     text-align: center;
-    font-family: "Lexend", sans-serif;
+    font-family: "StevieSans-Bold";
     font-size: 50px;
     font-style: normal;
     margin: 0;
@@ -2220,12 +2230,13 @@ div.footer__info.container {
   h1.home__title2 {
     text-align: center;
     color: #f9d700;
-    padding-top: 0.5rem;
-    font-family: "Lexend", sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: StevieSans-Bold;
     font-size: 215px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 8.6px;
     opacity: 0;
     text-shadow: 0 12px 15px #000;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
@@ -2233,8 +2244,9 @@ div.footer__info.container {
   /*revan*/
   p.home__description {
     font-size: large;
-    margin-bottom: 4rem;
-    padding: 1rem 20rem;
+    margin-bottom: 3rem;
+    padding: 0 20rem;
+    opacity: 0;
     text-shadow: 0 2px 5px #000;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
   }
@@ -2587,6 +2599,8 @@ div.footer__info.container {
 }
 
 @keyframes loads {
+  0% {
+  }
   100% {
     width: 0%;
     margin-left: -100rem;
@@ -2594,6 +2608,8 @@ div.footer__info.container {
 }
 
 @keyframes preload {
+  0% {
+  }
   100% {
     opacity: 0;
   }
@@ -2621,7 +2637,7 @@ div.footer__info.container {
   font-size: 25px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  padding-top: 3rem;
+  padding-bottom: 15px;
   color: #fff;
 }
 
