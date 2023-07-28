@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Indonesian leading IT Consultant with various services and
-  innovative products in this globalized world., initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
     <link
@@ -32,22 +29,25 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <!-- PRELOADER -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
 
   <body>
-    <!--==================== LOADER ====================-->
     <div class="loadscreen">
       <div class="preloader">
         <div class="loader">
           <div id="contain">
+            <label class="loading-title">Loading ...</label>
             <span class="loading-circle sp1">
               <span class="loading-circle sp2">
                 <span class="loading-circle sp3"></span>
               </span>
             </span>
-            <label class="loading-title">Loading...</label>
           </div>
+          <!-- <lottie-player src="https://lottie.host/67ee9158-44b6-4cfa-9eae-98a1b4f6032a/rhhzHn2tAU.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
         </div>
       </div>
     </div>
@@ -162,8 +162,8 @@
               <h3>We Provide :</h3>
               <p>
                 Software development including desktop, web and mobile
-                programming <br />
-                Hardware procurement <br />
+                programming<br />
+                Hardware procurement<br />
                 Multimedia including animation studio 2D and 3D, animating
                 company profile and graphic design
               </p>
@@ -572,5 +572,12 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      var loader = document.getElementsByClassName("preloader");
+      window = addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
