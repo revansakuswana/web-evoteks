@@ -1,4 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@600&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
@@ -124,77 +125,6 @@ button {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --first-color: hsl(228, 66%, 62%);
-  --second-color: hsl(25, 57%, 54%);
-  --title-color: hsl(228, 8%, 95%);
-  --text-color: hsl(228, 8%, 70%);
-  --border-color: hsl(228, 16%, 14%);
-  --body-color: hsl(228, 12%, 8%);
-  --container-color: hsl(228, 16%, 12%);
-}
-
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
-.dark-theme .home__search,
-.dark-theme .swiper-button-next,
-.dark-theme .swiper-button-prev {
-  border: 3px solid var(--border-color);
-}
-
-.dark-theme .nav__menu,
-.dark-theme .home__img,
-.dark-theme .services__card:hover, /*revan*/
-.dark-theme .value__img,
-.dark-theme .accordion-open,
-.dark-theme .accordion-open .value__accordion-icon,
-.dark-theme .accordion-open .value__accordion-arrow,
-.dark-theme .contact__img,
-.dark-theme .contact__card-box:hover,
-/*revan*/
-.dark-theme .scrollup {
-  box-shadow: none;
-  color: #fff;
-}
-/*revan*/
-.dark-theme .scrollup:hover {
-  transform: translateY(-0.25rem);
-  color: #fff;
-}
-
-.dark-theme .value__orbe,
-.dark-theme .value__accordion-icon,
-.dark-theme .value__accordion-arrow,
-.dark-theme .contact__orbe,
-.dark-theme .contact__card i,
-.dark-theme .contact__card-button,
-.dark-theme .subscribe__container {
-  background-color: var(--container-color);
-}
-
-.dark-theme .subscribe__container {
-  border: 6px solid var(--border-color);
-}
-
-.dark-theme .subscribe__description {
-  color: var(--text-color);
-}
-
-.dark-theme::-webkit-scrollbar {
-  background-color: hsl(228, 4%, 15%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(228, 4%, 25%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(228, 4%, 35%);
-}
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -235,6 +165,7 @@ section .section-title {
 }
 
 ul.nav__list {
+  margin-right: 2rem;
   margin-bottom: 0;
 }
 
@@ -553,7 +484,7 @@ a.nav-link.active {
 }
 
 .home__description {
-  color: var(--body-color);
+  color: #fff;
   margin-bottom: 2rem;
   text-align: center;
   padding-top: 3rem;
@@ -1036,6 +967,7 @@ span.arrow:before {
 .value__accordion {
   display: grid;
   row-gap: 1.5rem;
+  padding: 1rem;
 }
 
 .value__accordion-item {
@@ -1185,11 +1117,6 @@ h3.contact__card-title {
 }
 .contact__card-title {
   font-size: var(--normal-font-size);
-}
-
-/*revan*/
-p.contact__card-description {
-  color: hsl(228, 12%, 8%);
 }
 
 .contact__card-description {
@@ -1425,13 +1352,10 @@ div.footer__info.container {
   h2.section__title {
     text-align: center;
   }
-
-  .home {
-    padding-bottom: 0;
-  }
   .home__container {
     padding-top: 1rem;
     row-gap: 3.5rem;
+    column-gap: 0rem;
   }
   .home {
     background-image: url("../img/bg.webp");
@@ -1439,10 +1363,7 @@ div.footer__info.container {
     background-size: cover;
     background-position: center;
     padding-bottom: 5rem;
-  }
-  /*revan*/
-  .home__container {
-    column-gap: rem;
+    padding-bottom: 0;
   }
   /*revan*/
   div.home__logo {
@@ -1460,7 +1381,7 @@ div.footer__info.container {
     color: #f9d700;
     text-align: center;
     text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1474,7 +1395,7 @@ div.footer__info.container {
     color: #f9d700;
     text-align: center;
     text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -1551,9 +1472,6 @@ div.footer__info.container {
     color: var(--body-color);
     text-decoration: none;
   }
-  .home {
-    padding-bottom: 0;
-  }
   .home__container {
     padding-top: 4rem;
     row-gap: 0rem;
@@ -1566,6 +1484,7 @@ div.footer__info.container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 0;
   }
   /*revan*/
   img.logo__home {
@@ -1585,8 +1504,7 @@ div.footer__info.container {
     flex-shrink: 0;
     color: #f9d700;
     text-align: center;
-    text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 20px;
     font-style: normal;
     margin: 0rem;
@@ -1599,8 +1517,7 @@ div.footer__info.container {
   h1.home__title2 {
     color: #f9d700;
     text-align: center;
-    text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -1944,9 +1861,6 @@ div.footer__info.container {
   .grid {
     display: grid;
   }
-  .home {
-    padding-bottom: 0;
-  }
   .home__container {
     row-gap: 1rem;
   }
@@ -1955,6 +1869,7 @@ div.footer__info.container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 0;
   }
   /*revan*/
 
@@ -1975,7 +1890,7 @@ div.footer__info.container {
     color: #f9d700;
     text-align: center;
     text-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.859);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 20px;
     font-style: normal;
     padding: 0rem;
@@ -1987,7 +1902,7 @@ div.footer__info.container {
     color: #f9d700;
     text-align: center;
     text-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -2218,7 +2133,7 @@ div.footer__info.container {
   h1.home__title {
     color: #f9d700;
     text-align: center;
-    font-family: "StevieSans-Bold";
+    font-family: "Lexend", sans-serif;
     font-size: 50px;
     font-style: normal;
     margin: 0;
@@ -2230,9 +2145,8 @@ div.footer__info.container {
   h1.home__title2 {
     text-align: center;
     color: #f9d700;
-    text-align: center;
     padding-top: 1rem;
-    font-family: StevieSans-Bold;
+    font-family: "Lexend", sans-serif;
     font-size: 215px;
     font-style: normal;
     font-weight: 400;
@@ -2599,8 +2513,6 @@ div.footer__info.container {
 }
 
 @keyframes loads {
-  0% {
-  }
   100% {
     width: 0%;
     margin-left: -100rem;
@@ -2608,8 +2520,6 @@ div.footer__info.container {
 }
 
 @keyframes preload {
-  0% {
-  }
   100% {
     opacity: 0;
   }
