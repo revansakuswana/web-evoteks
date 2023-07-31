@@ -35,6 +35,20 @@
     <title>Evoteks - Evolusi Teknologi Solusi</title>
   </head>
   <body>
+    <div class="loadscreen">
+      <div class="preloader">
+        <div class="loader">
+          <div id="contain">
+            <label class="loading-title">Loading ...</label>
+            <span class="loading-circle sp1">
+              <span class="loading-circle sp2">
+                <span class="loading-circle sp3"></span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -584,5 +598,13 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+    
+      <script>
+      var loader = document.getElementsByClassName("preloader");
+      window = addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    
   </body>
 </html>
